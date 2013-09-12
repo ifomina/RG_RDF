@@ -1,0 +1,2992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Fcst_load</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>load</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_Method</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>Method=Method.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_Intx</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>Intx=Intx.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_Sls</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsRtl=SlsRtl.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_CAPRATIOS</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>CAPRATIOS=CAPRATIOS.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_CAPS</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>CAPS=CAPS.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_FORECASTLENGTH</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECASTLENGTH=FORECASTLENGTH.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_FRCSTSTART</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FRCSTSTART=FRCSTSTART.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_FRCSTSTARTMEAS</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FRCSTSTARTMEAS=FRCSTSTARTMEAS.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_HISTSTART</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>HISTSTART=HISTSTART.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_KEEPCLAMOEDMAXB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>KEEPCLAMPEDMAXB=KEEPCLAMPEDMAXB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_KEEPCLAMPEDMINB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>KEEPCLAMPEDMINB=KEEPCLAMPEDMINB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MAXALPHA</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MAXALPHA=MAXALPHA.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MAXB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MAXB=MAXB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MINB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MINB=MINB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MINCAPHIST</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MINCAPHIST=MINCAPHIST.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MINCROSTON</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MINCROSTON=MINCROSTON.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MINHOLT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MINHOLT=MINHOLT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_PERIOD</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PERIOD=PERIOD.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_SMOOTHBASELINE</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SMOOTHBASELINE=SMOOTHBASELINE.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_STARTDATEMEAS</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>STARTDATEMEAS=STARTDATEMEAS.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_TRENDDAMP</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TRENDDAMP=TRENDDAMP.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_USECAPPING</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>USECAPPING=USECAPPING.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_CAPINTERVALS</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>CAPINTERVALS=CAPINTERVALS.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_VERBOSE</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>VERBOSE=VERBOSE.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MAXWINTERSALPHA</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MAXWINTERSALPHA=MAXWINTERSALPHA.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_SlsMthdIntx</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthd=SlsWb</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MINWINTERS</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MINWINTERS=MINWINTERS.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>Load_lsover</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsover=lsover.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MthdIntxPriority</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MthdPriority=MthdPriority.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_FcstApproved</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FcstApproved=FcstApproved.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_lsoverfilt</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverfilt=lsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ColorB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TsvetB=TsvetB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ColorCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TsvetCopyT=TsvetCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ColorT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TsvetT=TsvetT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ConsumerGroupB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ProductB=ProductB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ConsumerGroupCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ProductCopyT=ProductCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ConsumerGroupT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ProductT=ProductT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DayNightB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DennochB=DennochB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DayNightCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DennochCopyT=DennochCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DayNightT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DennochT=DennochT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MarkSegmB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MarkSegmB=MarkSegmB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MarkSegmCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MarkSegmCopyT=MarkSegmCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MarkSegmT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MarkSegmT=MarkSegmT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>OdorB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ZapahB=ZapahB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>OdorCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ZapahCopyT=ZapahCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>OdorT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ZapahT=ZapahT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ProductB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PotrB=PotrB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ProductCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PotrCopyT=PotrCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ProductT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PotrT=PotrT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ResultB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ResultB=ResultB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ResultCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ResultCopyT=ResultCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ResultT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ResultT=ResultT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SkinTypeB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TipkozhivolosB=TipkozhivolosB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SkinTypeCopyT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TipkozhivolosCopyT=TipkozhivolosCopyT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SkinTypeT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TipkozhivolosT=TipkozhivolosT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>AnalogSku_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AnalogSku=AnalogSku.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>AnalogKoef_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AnalogKoef=AnalogKoef.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EOPU_load1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EOPU=EOPv2.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>StartDateDeficitFlD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>StartDateDeficitFlD=StartDateDeficitFlD.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EndDateDeficitFlD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EndDateDeficitFlD=EndDateDeficitFlD.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FilterDeficitEnabled_ld</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterDeficitEnabled=FilterDeficitEnabled.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>TheresholdDeficitFl_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TheresholdDeficitFl=TheresholdDeficitFl.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>BegDateNewSkuSlsD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BegDateNewSkuSlsD=BegDateNewSkuSlsD.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>StartDateNewSkuFlD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>StartDateNewSkuFlD=StartDateNewSkuFlD.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EndDateNewSkuFlD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EndDateNewSkuFlD=EndDateNewSkuFlD.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FilterNewSkuEnabled_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterNewSkuEnabled=FilterNewSkuEnabled.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FilterRegim_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterRegim=FilterRegim.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_StoresForNewSku</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>StoresForNewSku=StoresForNewSku.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_LevelStrGroupI</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LevelStrGroupI=LevelStrGroupI.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_NewSkuB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>NewSkuB=NewSkuB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_NewSkuTmpB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>NewSkuTmpB=if(position([prod].[itm])==position([pror].[itmr]),NewSkuB,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_NewSkuRHSB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>NewSkuRHSB=NewSkuTmpB.or</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_NewSkuStatusPQB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>NewSkuStatusPQB=NewSkuB</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_FilterNewSkuPQB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterNewSkuPQB=NewSkuB.or</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsRHSTmpU</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsRHSTmpU=if(position([prod].[itm])==position([pror].[itmr]),lsover,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsRHSU</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsRHSU=SlsRHSTmpU</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_BadPointCntP</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BadPointCntP=BadPointCntP.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_CatT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>cat_engT.level([prod].[cat])=position([prod].[cat])</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_CatCopyT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>cat_engCopyT.level([pror].[catr])=position([pror].[catr])</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_BrandIdCopyT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BrandIdCopyT.level([pror].[brar])=BrandIdVreT.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SkuInStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SkuInStr=if(SlsWb&gt;0,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsWb</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWb=lsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SalesAnalogTmpU</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SalesRHSTmpU=if(position([prod].[itm])==position([pror].[itmr]),lsover,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsL1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsL1=tssum(SlsWb,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsMthdIntxL1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdL1=tssum(SlsMthd,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsMthdIntxL2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdL2=tssum(SlsMthdL1,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsMthdIntxL3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdL3=tssum(SlsMthdL2,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstMsg_4</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FcstMsg="Выполнено"</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsWbLastWeekTmp</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWbLastWeekTmp=indexlast([clnd].top,SlsWb.level([loc].top+[prod].top)&gt;0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsWbLastWeek</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWbLastWeek=SlsWbLastWeekTmp.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsDoWCalc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsDoWCalc=if(current&gt;=indexlast([clnd].top,SlsWb&gt;0)-28,SlsWb,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_DoWPart</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DoWPart=SlsDoWCalc/SlsDoWCalc.level([clnd].top)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>clean_KoeffFcstFilt</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>KoeffFcstFilt=1</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_PriceR</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PriceR=PriceR.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MaxFcst30U</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MaxFcst30U=MaxFcst30U.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MethodS</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MethodS=if(Method==1,"Auto ES",if(Method==2,"Simple",if(Method==3,"Holt",if(Method==4,"Winters",if(Method==5,"Causal",if(Method==6,"Average",if(Method==7,"No Forecast",if(Method==8,"Copy",if(Method==9,"Croston",if(Method==10,"M.Winters",if(Method==11,"A.Winters",if(Method==12,"Simple Croston",if(Method==13,"Bayesian",if(Method==14,"Loadplan",if(Method==15,"Profile",if(Method==17,"Moving Average",""))))))))))))))))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MapProdB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MapProdB=if(position([prod].[itm] )==position([pror].[itmr] ),true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MapLocB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MapLocB=if(position([loc].[str] )==position([locs].[strs] ),true,false )</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FirstDateABCStrD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FirstDateABCStrD=indextostartdate(FirstDateABCStrI,[clnd].[day])</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FirstDateABCStrI_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FirstDateABCStrI=LastDateABCStrI-59</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>LastDateABCStrD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LastDateABCStrD=now</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>LastDateABCStrI_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LastDateABCStrI=index([clnd].[day],LastDateABCStrD)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_ABCStrSlsU</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ABCStrSlsU=ABCStrSlsVreU</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ABCStrSlsVreU_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ABCStrSlsVreU=if(current==first,tssum(lsover,FirstDateABCStrI,LastDateABCStrI),0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_AbcResultResultX</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>dst:AbcStrResultI&lt;-javaexpression(class:"ABC",skuvalue:ABCStrSlsU, sort:ABCStrSortU,parent:ABCStrParentT)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_ABCStrSortU</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ABCStrSortU=ABCStrSlsU</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrParentT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrParentT="1"</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultTmpT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultTmpT=if(position([prod].[cat])==position([pror].[catr]),if(AbcStrResultI-ABCStrSlsU&lt;=StrAThres*ABCStrSlsU.level([loc].top),"A",if(AbcStrResultI-ABCStrSlsU&lt;=StrBThres*ABCStrSlsU.level([loc].top),"B","C")),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultT=AbcStrResultTmpT.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultVreT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultVreT=if(position([loc].[str])==position([locs].[strs]),AbcStrResultT,ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultCopyT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultCopyT=AbcStrResultVreT.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_ABCResultStrsTmpT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ABCResultStrsTmpT=if(position([loc].[str])==position([locs].[strs]),AbcStrResultT,ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_ABCResultStrsT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ABCResultStrsT=ABCResultStrsTmpT.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>IsCleanedB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>IsCleanedB=if(SlsRtl==lsover,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EOPMthd_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EOPMthd=EOPU</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EOPfiltr_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EOPfiltr=EOPU</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DateCalcPrprD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DateCalcPrprD=DateCalcPrprD.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DateCalcPrprI_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DateCalcPrprI=index([clnd].[day],DateCalcPrprD)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ThrDateCalcPrprD_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ThrDateCalcPrprD=now</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RSTARTDATEMEAS_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RSTARTDATEMEAS=indextostartdate(min(index([clnd].[week],STARTDATEMEAS),SlsWbLastWeek)-RetroWindow,[clnd].[week])</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsMthdV1_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdV1=tssum(SlsMthd,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsMthdV2_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdV2=tssum(SlsMthdV1,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsMthdV3_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdV3=tssum(SlsMthdV2,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsMthdV4_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdV4=tssum(SlsMthdV3,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsMthdV5_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsMthdV5=tssum(SlsMthdV4,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverfiltV1_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverfiltV1=tssum(lsoverfilt,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverfiltV2_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverfiltV2=tssum(lsoverfiltV1,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverfiltV3_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverfiltV3=tssum(lsoverfiltV2,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverfiltV4_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverfiltV4=tssum(lsoverfiltV3,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverfiltV5_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverfiltV5=tssum(lsoverfiltV4,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>salRDF_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>salRDF=SlsRtl.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutPromoDb_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutPromo=SlsWithoutPromo.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_Blank</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BlankV1,BlankV2,BlankV3,BlankV4,BlankV5,BlankV6,BlankV7,BlankV8,BlankV9,BlankV10=passthrough("","","","","","","","","","")</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_BrandIdT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BrandIdT=BrandIdT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_BrandIdVreT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BrandIdVreT=if(position([prod].[itm])==position([pror].[itmr]),BrandIdT,ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_MAWinLen</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MAWinLen=MAWinLen.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_ApproveCriterion</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ApproveCriterion=ApproveCriterion.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SkupIDT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SkupIDT=SkupIDT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SkupIDRT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SkupIDRT=SkupIDRT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>StrCodeT_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>StrCodeT=StrCodeT.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>StrCodeST_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>StrCodeST=StrCodeST.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>salRDFV1_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>salRDFMthdV1=tssum(salRDFMthd,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>salRDFV2_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>salRDFMthdV2=tssum(salRDFMthdV1,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>salRDFV3_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>salRDFMthdV3=tssum(salRDFMthdV2,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>salRDFV4_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>salRDFMthdV4=tssum(salRDFMthdV3,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>salRDFV5_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>salRDFMthdV5=tssum(salRDFMthdV4,current-52,current-52)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>salRDFMthd_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>salRDFMthd=salRDF</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>IsPromoFutureB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>IsPromoFutureB=IsPromoFutureB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>IsPromoB_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>IsPromoB=IsPromoB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>Promokoeff_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>Promokoeff=Promokoeff.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>PromokoeffFuture_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PromokoeffFuture=PromokoeffFuture.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>PromoKoefFutureRDF_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PromoKoefFutureRDF=PromokoeffFuture</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>PromoKoefPastRDF_load</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PromoKoefPastRDF=Promokoeff</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutPromoRDFMthd</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutPromoRDFMthd=SlsWithoutPromo</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_wkStartD</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>wkStartD=indextostartdate(current)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_wkEndD</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>wkEndD=indextoenddate(current)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>load_FlagForDeleteFcstB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FlagForDeleteFcstB=FlagForDeleteFcstB.master</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

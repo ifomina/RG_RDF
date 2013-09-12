@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="Workbook">
+  <attribute name="name">
+    <value>Workbook0</value>
+  </attribute>
+  <attribute name="Label">
+    <value>2. Очистка данных</value>
+  </attribute>
+  <attribute name="WorkbookGroup">
+    <value>Custom</value>
+  </attribute>
+  <attribute name="WorkbookGroupLabel">
+    <value>Очистка данных</value>
+  </attribute>
+  <attribute name="WorkbookLib">
+    <value>Templates</value>
+  </attribute>
+  <attribute name="WorkbookType">
+    <value>DynamicTemplate</value>
+  </attribute>
+  <attribute name="IsWizardOnly">
+    <value>false</value>
+  </attribute>
+  <attribute name="IsImageEnabled">
+    <value>false</value>
+  </attribute>
+  <attribute name="RuleSet">
+    <value>Preprocess</value>
+  </attribute>
+  <attribute name="LoadRules">
+    <value>Preprocess_load</value>
+  </attribute>
+  <attribute name="CommitRules">
+    <value>Preprocess_commit</value>
+  </attribute>
+  <attribute name="CalcRules">
+    <value>Preprocess_calc</value>
+  </attribute>
+  <attribute name="RefreshRules">
+    <value>Preprocess_refresh</value>
+  </attribute>
+  <attribute name="IsUseDefaults">
+    <value>true</value>
+  </attribute>
+  <attribute name="DpmDimensions">
+    <value></value>
+  </attribute>
+  <attribute name="IsCustomWizard">
+    <value>false</value>
+  </attribute>
+  <data_model type="AxisInfo">
+    <attribute name="name">
+      <value>AxisInfo</value>
+    </attribute>
+    <attribute name="MEASAxis">
+      <value>XAxis</value>
+    </attribute>
+    <attribute name="MEASOrder">
+      <value>0</value>
+    </attribute>
+  </data_model>
+  <data_model type="Wizards">
+    <attribute name="name">
+      <value>Wizards</value>
+    </attribute>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>CLNDWizard</value>
+      </attribute>
+      <attribute name="CLNDOrder">
+        <value>0</value>
+      </attribute>
+      <attribute name="CLNDDim">
+        <value>day</value>
+      </attribute>
+      <attribute name="CLNDLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="CLNDRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="CLNDMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="CLNDWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>PRODWizard</value>
+      </attribute>
+      <attribute name="PRODOrder">
+        <value>1</value>
+      </attribute>
+      <attribute name="PRODDim">
+        <value>itm</value>
+      </attribute>
+      <attribute name="PRODLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="PRODRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="PRODMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="PRODWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>LOCWizard</value>
+      </attribute>
+      <attribute name="LOCOrder">
+        <value>2</value>
+      </attribute>
+      <attribute name="LOCDim">
+        <value>str</value>
+      </attribute>
+      <attribute name="LOCLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="LOCRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="LOCMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="LOCWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="WorkbookTabs">
+    <attribute name="name">
+      <value>WorkbookTabs</value>
+    </attribute>
+    <data_model type="WorkbookTab">
+      <attribute name="name">
+        <value>ClusSlsAvgT</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Классы по средним продажам</value>
+      </attribute>
+      <data_model type="Worksheets">
+        <attribute name="name">
+          <value>Worksheets</value>
+        </attribute>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>ParamCSA</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Параметры</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>itm_str</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>FirstDateCSAD</value>
+                <value>LastDateCSAD</value>
+                <value>FirstDateCSAI</value>
+                <value>LastDateCSAI</value>
+                <value>ThrFirstSlsAvgCSA</value>
+                <value>ThrLastSlsAvgCSA</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>FirstDateCSAD</value>
+                <value>LastDateCSAD</value>
+                <value>FirstDateCSAI</value>
+                <value>LastDateCSAI</value>
+                <value>ThrFirstSlsAvgCSA</value>
+                <value>ThrLastSlsAvgCSA</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>FirstDateCSAD</value>
+                <value>LastDateCSAD</value>
+                <value>ThrFirstSlsAvgCSA</value>
+                <value>ThrLastSlsAvgCSA</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>FirstDateCSAD</value>
+                <value>LastDateCSAD</value>
+                <value>ThrFirstSlsAvgCSA</value>
+                <value>ThrLastSlsAvgCSA</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>ClusSlsAvgS</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Классы по средним продажам</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>itm_str</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ClusItmStrCSAT</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ClusItmStrCSAT</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ClusItmStrCSAT</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ClusItmStrCSAT</value>
+                <value>SlsAvgCSA</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+      </data_model>
+    </data_model>
+    <data_model type="WorkbookTab">
+      <attribute name="name">
+        <value>ClearSlsDefCMNT</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Очистка продаж</value>
+      </attribute>
+      <data_model type="Worksheets">
+        <attribute name="name">
+          <value>Worksheets</value>
+        </attribute>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>ClSlsDParGrCMNS</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Параметры очистки для классов по ср. продажам</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>clsd</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>alphaClsd</value>
+                <value>DeltaClsd</value>
+                <value>Hist_min_fsClsd</value>
+                <value>NFutClsd</value>
+                <value>NPastClsd</value>
+                <value>Nsigma_maxClsd</value>
+                <value>Nsigma_minClsd</value>
+                <value>Nsigmaadj_maxClsd</value>
+                <value>Nsigmaadj_minClsd</value>
+                <value>WindowClsd</value>
+                <value>ThrDeltaSlsWithoutSeasClSClsd</value>
+                <value>ThrPtsNumberPClsd</value>
+                <value>WinSlsWithoutSeasAvgClsd</value>
+                <value>WinSlsWithoutSeasAvgClsdLeft</value>
+                <value>WinSlsWithoutSeasAvgClsdRight</value>
+                <value>WinAtipBehClsdRight</value>
+                <value>WinAtipBehClsdLeft</value>
+                <value>ThrPtsNumberAtipBehPClsd</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>alphaClsd</value>
+                <value>DeltaClsd</value>
+                <value>Hist_min_fsClsd</value>
+                <value>NFutClsd</value>
+                <value>NPastClsd</value>
+                <value>Nsigma_maxClsd</value>
+                <value>Nsigma_minClsd</value>
+                <value>Nsigmaadj_maxClsd</value>
+                <value>Nsigmaadj_minClsd</value>
+                <value>WindowClsd</value>
+                <value>ThrDeltaSlsWithoutSeasClSClsd</value>
+                <value>ThrPtsNumberPClsd</value>
+                <value>WinSlsWithoutSeasAvgClsd</value>
+                <value>WinSlsWithoutSeasAvgClsdLeft</value>
+                <value>WinSlsWithoutSeasAvgClsdRight</value>
+                <value>WinAtipBehClsdRight</value>
+                <value>WinAtipBehClsdLeft</value>
+                <value>ThrPtsNumberAtipBehPClsd</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>alphaClsd</value>
+                <value>DeltaClsd</value>
+                <value>Hist_min_fsClsd</value>
+                <value>NFutClsd</value>
+                <value>NPastClsd</value>
+                <value>Nsigma_maxClsd</value>
+                <value>Nsigma_minClsd</value>
+                <value>Nsigmaadj_maxClsd</value>
+                <value>Nsigmaadj_minClsd</value>
+                <value>WindowClsd</value>
+                <value>ThrDeltaSlsWithoutSeasClSClsd</value>
+                <value>ThrPtsNumberPClsd</value>
+                <value>WinSlsWithoutSeasAvgClsdLeft</value>
+                <value>WinSlsWithoutSeasAvgClsdRight</value>
+                <value>ThrPtsNumberAtipBehPClsd</value>
+                <value>WinAtipBehClsdLeft</value>
+                <value>WinAtipBehClsdRight</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>alphaClsd</value>
+                <value>DeltaClsd</value>
+                <value>Hist_min_fsClsd</value>
+                <value>NFutClsd</value>
+                <value>NPastClsd</value>
+                <value>Nsigma_maxClsd</value>
+                <value>Nsigma_minClsd</value>
+                <value>Nsigmaadj_maxClsd</value>
+                <value>Nsigmaadj_minClsd</value>
+                <value>WindowClsd</value>
+                <value>ThrDeltaSlsWithoutSeasClSClsd</value>
+                <value>ThrPtsNumberPClsd</value>
+                <value>WinSlsWithoutSeasAvgClsdLeft</value>
+                <value>WinSlsWithoutSeasAvgClsdRight</value>
+                <value>ThrPtsNumberAtipBehPClsd</value>
+                <value>WinAtipBehClsdLeft</value>
+                <value>WinAtipBehClsdRight</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLSAAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLSAOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>ClSlsDefParCMNS</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Параметры очистки (SKU-магазин)</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>#LSPar_Int#</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>alpha</value>
+                <value>NFut</value>
+                <value>NPast</value>
+                <value>Hist_min_fs</value>
+                <value>Nsigma_max</value>
+                <value>Nsigma_min</value>
+                <value>Nsigmaadj_max</value>
+                <value>Nsigmaadj_min</value>
+                <value>Window</value>
+                <value>Delta</value>
+                <value>ThrDeltaSlsWithoutSeasClSAvg</value>
+                <value>WinSlsWithoutSeasAvg</value>
+                <value>ThrPtsNumber</value>
+                <value>ThrPtsNumberP</value>
+                <value>WinSlsWithoutSeasAvgRight</value>
+                <value>WinSlsWithoutSeasAvgLeft</value>
+                <value>ThrPtsNumberAtipBehP</value>
+                <value>WinAtipBehRight</value>
+                <value>WinAtipBehLeft</value>
+                <value>ClusItmStrCSAT</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>alpha</value>
+                <value>NFut</value>
+                <value>NPast</value>
+                <value>Hist_min_fs</value>
+                <value>Nsigma_max</value>
+                <value>Nsigma_min</value>
+                <value>Nsigmaadj_max</value>
+                <value>Nsigmaadj_min</value>
+                <value>Window</value>
+                <value>Delta</value>
+                <value>ThrDeltaSlsWithoutSeasClSAvg</value>
+                <value>WinSlsWithoutSeasAvg</value>
+                <value>ThrPtsNumber</value>
+                <value>ThrPtsNumberP</value>
+                <value>WinSlsWithoutSeasAvgRight</value>
+                <value>WinSlsWithoutSeasAvgLeft</value>
+                <value>ThrPtsNumberAtipBehP</value>
+                <value>WinAtipBehRight</value>
+                <value>WinAtipBehLeft</value>
+                <value>ClusItmStrCSAT</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>alpha</value>
+                <value>NFut</value>
+                <value>NPast</value>
+                <value>Hist_min_fs</value>
+                <value>Nsigma_max</value>
+                <value>Nsigma_min</value>
+                <value>Nsigmaadj_max</value>
+                <value>Nsigmaadj_min</value>
+                <value>Window</value>
+                <value>Delta</value>
+                <value>ThrDeltaSlsWithoutSeasClSAvg</value>
+                <value>ThrPtsNumberP</value>
+                <value>WinSlsWithoutSeasAvgLeft</value>
+                <value>WinSlsWithoutSeasAvgRight</value>
+                <value>ThrPtsNumberAtipBehP</value>
+                <value>WinAtipBehLeft</value>
+                <value>WinAtipBehRight</value>
+                <value>ClusItmStrCSAT</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>alpha</value>
+                <value>NFut</value>
+                <value>NPast</value>
+                <value>Hist_min_fs</value>
+                <value>Nsigma_max</value>
+                <value>Nsigma_min</value>
+                <value>Nsigmaadj_max</value>
+                <value>Nsigmaadj_min</value>
+                <value>Window</value>
+                <value>Delta</value>
+                <value>ThrDeltaSlsWithoutSeasClSAvg</value>
+                <value>ThrPtsNumberP</value>
+                <value>WinSlsWithoutSeasAvgLeft</value>
+                <value>WinSlsWithoutSeasAvgRight</value>
+                <value>ThrPtsNumberAtipBehP</value>
+                <value>WinAtipBehLeft</value>
+                <value>WinAtipBehRight</value>
+                <value>ClusItmStrCSAT</value>
+                <value>WinEopNullLengthI</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>ClearSlsDefCMNS</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Продажи без сезонности, очищенные от дефицита</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>#LS_Int#</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ActivSkuSlsEOPB</value>
+                <value>FilterEopNullWindowI</value>
+                <value>lsover</value>
+                <value>sal</value>
+                <value>lsover1</value>
+                <value>lsover3</value>
+                <value>lsover4</value>
+                <value>BaseLsover</value>
+                <value>lsover15</value>
+                <value>AtipPntB</value>
+                <value>ls1</value>
+                <value>ls3</value>
+                <value>RightBordSlsAvg</value>
+                <value>LeftBordSlsAvg</value>
+                <value>ls4</value>
+                <value>ls15</value>
+                <value>lsp1</value>
+                <value>SlsWithoutSeasClAvg2T</value>
+                <value>lsp3</value>
+                <value>lsp4</value>
+                <value>lsp15</value>
+                <value>Ref3</value>
+                <value>Ref15</value>
+                <value>OutageA</value>
+                <value>Deviation</value>
+                <value>MethodChose</value>
+                <value>lsoverM</value>
+                <value>lsM</value>
+                <value>lspM</value>
+                <value>TssumForLsAvg</value>
+                <value>ls</value>
+                <value>lsp</value>
+                <value>EOPU</value>
+                <value>lsoverAvg</value>
+                <value>SlsAvgForLsAvg</value>
+                <value>lsAvg</value>
+                <value>lspAvg</value>
+                <value>GoodPtsAtipBehLsAvg</value>
+                <value>TssumForLsAvgI</value>
+                <value>SlsAvgForLsAvgVre</value>
+                <value>ThrPtsNumber</value>
+                <value>GoodTssum2</value>
+                <value>SlsWithoutSeasClAvg2Vre</value>
+                <value>SlsWithoutSeasClAvg2</value>
+                <value>KoefSeas</value>
+                <value>SlsWithoutSeasClS2</value>
+                <value>NullMeasV1</value>
+                <value>NullMeasV2</value>
+                <value>NullMeasV3</value>
+                <value>SlsWithoutPromo</value>
+                <value>SlsWithoutSeasCut</value>
+                <value>SlsClearClSEnd2</value>
+                <value>SlsWithoutSeasAtipBeh2</value>
+                <value>lsoverAvgT</value>
+                <value>GoodPntEopI</value>
+                <value>GoodTssum2I</value>
+                <value>BaseLsoverAvgU</value>
+                <value>NullMeasV4</value>
+                <value>NullMeasV5</value>
+                <value>NullMeasV6</value>
+                <value>NullMeasV7</value>
+                <value>NullMeasV8</value>
+                <value>NullMeasV9</value>
+                <value>NullMeasV10</value>
+                <value>BaseLsoverAvgULeft</value>
+                <value>BaseLsoverAvgURight</value>
+                <value>LeftOutageI</value>
+                <value>LeftOutageIVre</value>
+                <value>RightOutageI</value>
+                <value>RightOutageIVre</value>
+                <value>BaseLsoverEopNZU</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ActivSkuSlsEOPB</value>
+                <value>FilterEopNullWindowI</value>
+                <value>lsover</value>
+                <value>sal</value>
+                <value>lsover1</value>
+                <value>lsover3</value>
+                <value>lsover4</value>
+                <value>BaseLsover</value>
+                <value>lsover15</value>
+                <value>AtipPntB</value>
+                <value>ls1</value>
+                <value>ls3</value>
+                <value>RightBordSlsAvg</value>
+                <value>LeftBordSlsAvg</value>
+                <value>ls4</value>
+                <value>ls15</value>
+                <value>lsp1</value>
+                <value>SlsWithoutSeasClAvg2T</value>
+                <value>lsp3</value>
+                <value>lsp4</value>
+                <value>lsp15</value>
+                <value>Ref3</value>
+                <value>Ref15</value>
+                <value>OutageA</value>
+                <value>Deviation</value>
+                <value>MethodChose</value>
+                <value>lsoverM</value>
+                <value>lsM</value>
+                <value>lspM</value>
+                <value>TssumForLsAvg</value>
+                <value>ls</value>
+                <value>lsp</value>
+                <value>EOPU</value>
+                <value>lsoverAvg</value>
+                <value>SlsAvgForLsAvg</value>
+                <value>lsAvg</value>
+                <value>lspAvg</value>
+                <value>GoodPtsAtipBehLsAvg</value>
+                <value>TssumForLsAvgI</value>
+                <value>SlsAvgForLsAvgVre</value>
+                <value>ThrPtsNumber</value>
+                <value>GoodTssum2</value>
+                <value>SlsWithoutSeasClAvg2Vre</value>
+                <value>SlsWithoutSeasClAvg2</value>
+                <value>KoefSeas</value>
+                <value>SlsWithoutSeasClS2</value>
+                <value>NullMeasV1</value>
+                <value>NullMeasV2</value>
+                <value>NullMeasV3</value>
+                <value>SlsWithoutPromo</value>
+                <value>SlsWithoutSeasCut</value>
+                <value>SlsClearClSEnd2</value>
+                <value>SlsWithoutSeasAtipBeh2</value>
+                <value>lsoverAvgT</value>
+                <value>GoodPntEopI</value>
+                <value>GoodTssum2I</value>
+                <value>BaseLsoverAvgU</value>
+                <value>NullMeasV4</value>
+                <value>NullMeasV5</value>
+                <value>NullMeasV6</value>
+                <value>NullMeasV7</value>
+                <value>NullMeasV8</value>
+                <value>NullMeasV9</value>
+                <value>NullMeasV10</value>
+                <value>BaseLsoverAvgULeft</value>
+                <value>BaseLsoverAvgURight</value>
+                <value>LeftOutageI</value>
+                <value>LeftOutageIVre</value>
+                <value>RightOutageI</value>
+                <value>RightOutageIVre</value>
+                <value>BaseLsoverEopNZU</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>sal</value>
+                <value>EOPU</value>
+                <value>SlsWithoutPromo</value>
+                <value>SlsWithoutSeasClS2</value>
+                <value>SlsWithoutSeasCut</value>
+                <value>NullMeasV1</value>
+                <value>AtipPntB</value>
+                <value>SlsWithoutSeasClAvg2T</value>
+                <value>SlsWithoutSeasClAvg2</value>
+                <value>SlsWithoutSeasAtipBeh2</value>
+                <value>NullMeasV4</value>
+                <value>OutageA</value>
+                <value>NullMeasV5</value>
+                <value>lsoverAvgT</value>
+                <value>BaseLsoverAvgULeft</value>
+                <value>BaseLsoverAvgURight</value>
+                <value>BaseLsoverAvgU</value>
+                <value>lsoverAvg</value>
+                <value>lsAvg</value>
+                <value>lspAvg</value>
+                <value>NullMeasV6</value>
+                <value>lsover1</value>
+                <value>ls1</value>
+                <value>lsp1</value>
+                <value>NullMeasV7</value>
+                <value>Ref3</value>
+                <value>lsover3</value>
+                <value>ls3</value>
+                <value>lsp3</value>
+                <value>NullMeasV8</value>
+                <value>lsover4</value>
+                <value>ls4</value>
+                <value>lsp4</value>
+                <value>NullMeasV9</value>
+                <value>Ref15</value>
+                <value>lsover15</value>
+                <value>ls15</value>
+                <value>lsp15</value>
+                <value>NullMeasV10</value>
+                <value>lsoverM</value>
+                <value>lsM</value>
+                <value>lspM</value>
+                <value>NullMeasV2</value>
+                <value>MethodChose</value>
+                <value>NullMeasV3</value>
+                <value>lsover</value>
+                <value>ls</value>
+                <value>lsp</value>
+                <value>SlsClearClSEnd2</value>
+                <value>LeftOutageIVre</value>
+                <value>LeftOutageI</value>
+                <value>RightOutageIVre</value>
+                <value>RightOutageI</value>
+                <value>GoodPntEopI</value>
+                <value>BaseLsoverEopNZU</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>sal</value>
+                <value>EOPU</value>
+                <value>SlsWithoutPromo</value>
+                <value>SlsWithoutSeasClS2</value>
+                <value>SlsWithoutSeasCut</value>
+                <value>NullMeasV1</value>
+                <value>AtipPntB</value>
+                <value>SlsWithoutSeasClAvg2T</value>
+                <value>SlsWithoutSeasClAvg2</value>
+                <value>SlsWithoutSeasAtipBeh2</value>
+                <value>NullMeasV4</value>
+                <value>OutageA</value>
+                <value>NullMeasV5</value>
+                <value>lsoverAvgT</value>
+                <value>BaseLsoverAvgULeft</value>
+                <value>BaseLsoverAvgURight</value>
+                <value>BaseLsoverAvgU</value>
+                <value>lsoverAvg</value>
+                <value>lsAvg</value>
+                <value>lspAvg</value>
+                <value>NullMeasV6</value>
+                <value>lsover1</value>
+                <value>ls1</value>
+                <value>lsp1</value>
+                <value>NullMeasV7</value>
+                <value>Ref3</value>
+                <value>lsover3</value>
+                <value>ls3</value>
+                <value>lsp3</value>
+                <value>NullMeasV8</value>
+                <value>lsover4</value>
+                <value>ls4</value>
+                <value>lsp4</value>
+                <value>NullMeasV9</value>
+                <value>Ref15</value>
+                <value>lsover15</value>
+                <value>ls15</value>
+                <value>lsp15</value>
+                <value>NullMeasV10</value>
+                <value>lsoverM</value>
+                <value>lsM</value>
+                <value>lspM</value>
+                <value>NullMeasV2</value>
+                <value>MethodChose</value>
+                <value>NullMeasV3</value>
+                <value>lsover</value>
+                <value>ls</value>
+                <value>lsp</value>
+                <value>SlsClearClSEnd2</value>
+                <value>LeftOutageIVre</value>
+                <value>LeftOutageI</value>
+                <value>RightOutageIVre</value>
+                <value>RightOutageI</value>
+                <value>GoodPntEopI</value>
+                <value>BaseLsoverEopNZU</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+            <data_model type="PositionQuery">
+              <attribute name="name">
+                <value>PositionQuery36</value>
+              </attribute>
+              <attribute name="Label">
+                <value>PositionQuery36</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>FilterSkuStoreCl</value>
+              </attribute>
+              <attribute name="DimensionName">
+                <value>itm</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+      </data_model>
+    </data_model>
+    <data_model type="WorkbookTab">
+      <attribute name="name">
+        <value>IscluchCMNT</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Работа с исключениями</value>
+      </attribute>
+      <data_model type="Worksheets">
+        <attribute name="name">
+          <value>Worksheets</value>
+        </attribute>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>FiltersCMNT</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Фильтры</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>true</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>FilterRegimCl</value>
+                <value>ThresholdDeficitFlCl</value>
+                <value>StartDateDeficitFlClD</value>
+                <value>EndDateDeficitFlClD</value>
+                <value>FilterDeficitEnabledCl</value>
+                <value>FilterNewSkuEnabledCl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>FilterRegimCl</value>
+                <value>ThresholdDeficitFlCl</value>
+                <value>StartDateDeficitFlClD</value>
+                <value>EndDateDeficitFlClD</value>
+                <value>FilterDeficitEnabledCl</value>
+                <value>FilterNewSkuEnabledCl</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>FilterRegimCl</value>
+                <value>FilterDeficitEnabledCl</value>
+                <value>ThresholdDeficitFlCl</value>
+                <value>StartDateDeficitFlClD</value>
+                <value>EndDateDeficitFlClD</value>
+                <value>FilterNewSkuEnabledCl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>FilterRegimCl</value>
+                <value>FilterDeficitEnabledCl</value>
+                <value>ThresholdDeficitFlCl</value>
+                <value>StartDateDeficitFlClD</value>
+                <value>EndDateDeficitFlClD</value>
+                <value>FilterNewSkuEnabledCl</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>FilterPosCMNT</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Отфильтрованные позиции</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>#LS_Int#</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>sal</value>
+                <value>OutageA</value>
+                <value>EOPU</value>
+                <value>SlsWithoutSeasClS</value>
+                <value>SlsWithoutSeasGdPtsClS</value>
+                <value>SlsClearClSEnd</value>
+                <value>SlsWithoutSeasAtipBeh</value>
+                <value>lsover</value>
+                <value>GoodPtsAtipBehClS2</value>
+                <value>SlsClearClSEnd2</value>
+                <value>SlsWithoutSeasAtipBeh2</value>
+                <value>NullMeasV1</value>
+                <value>NullMeasV2</value>
+                <value>NullMeasV3</value>
+                <value>IsNewSkuFl</value>
+                <value>SlsClSFl</value>
+                <value>EOPClSFl</value>
+                <value>SlsWithoutSeasClSFl</value>
+                <value>lsoverClSFl</value>
+                <value>SlsWithoutSeasAtipBeh2Fl</value>
+                <value>SlsWithoutPromoFl</value>
+                <value>SlsClearClSEnd2Fl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>sal</value>
+                <value>OutageA</value>
+                <value>EOPU</value>
+                <value>SlsWithoutSeasClS</value>
+                <value>SlsWithoutSeasGdPtsClS</value>
+                <value>SlsClearClSEnd</value>
+                <value>SlsWithoutSeasAtipBeh</value>
+                <value>lsover</value>
+                <value>GoodPtsAtipBehClS2</value>
+                <value>SlsClearClSEnd2</value>
+                <value>SlsWithoutSeasAtipBeh2</value>
+                <value>NullMeasV1</value>
+                <value>NullMeasV2</value>
+                <value>NullMeasV3</value>
+                <value>IsNewSkuFl</value>
+                <value>SlsClSFl</value>
+                <value>EOPClSFl</value>
+                <value>SlsWithoutSeasClSFl</value>
+                <value>lsoverClSFl</value>
+                <value>SlsWithoutSeasAtipBeh2Fl</value>
+                <value>SlsWithoutPromoFl</value>
+                <value>SlsClearClSEnd2Fl</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>SlsClSFl</value>
+                <value>EOPClSFl</value>
+                <value>NullMeasV1</value>
+                <value>SlsWithoutSeasClSFl</value>
+                <value>lsoverClSFl</value>
+                <value>SlsWithoutSeasAtipBeh2Fl</value>
+                <value>SlsWithoutPromoFl</value>
+                <value>SlsClearClSEnd2Fl</value>
+                <value>IsNewSkuFl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>SlsClSFl</value>
+                <value>EOPClSFl</value>
+                <value>NullMeasV1</value>
+                <value>SlsWithoutSeasClSFl</value>
+                <value>lsoverClSFl</value>
+                <value>SlsWithoutSeasAtipBeh2Fl</value>
+                <value>SlsWithoutPromoFl</value>
+                <value>SlsClearClSEnd2Fl</value>
+                <value>IsNewSkuFl</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+            <data_model type="PositionQuery">
+              <attribute name="name">
+                <value>PositionQuery2</value>
+              </attribute>
+              <attribute name="Label">
+                <value>PositionQuery2</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>FilterSkuStoreCl</value>
+              </attribute>
+              <attribute name="DimensionName">
+                <value>itm</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="Menu">
+    <attribute name="name">
+      <value>Menu57</value>
+    </attribute>
+    <attribute name="Label">
+      <value>Очистка данных</value>
+    </attribute>
+    <data_model type="MenuItems">
+      <attribute name="name">
+        <value>MenuItems</value>
+      </attribute>
+      <data_model type="MenuItem">
+        <attribute name="name">
+          <value>menuItem265</value>
+        </attribute>
+        <attribute name="Label">
+          <value>1. Установить параметры очистки данных</value>
+        </attribute>
+        <attribute name="Function">
+          <value>RuleGroupProcessor</value>
+        </attribute>
+        <attribute name="Arguments">
+          <value>DeficitCearParGr</value>
+        </attribute>
+        <attribute name="MenuItemId">
+          <value>265</value>
+        </attribute>
+        <attribute name="Condition">
+          <value></value>
+        </attribute>
+        <attribute name="Message">
+          <value></value>
+        </attribute>
+        <attribute name="CommitAsap">
+          <value>false</value>
+        </attribute>
+        <attribute name="IntradayConcurrent">
+          <value>false</value>
+        </attribute>
+      </data_model>
+      <data_model type="MenuItem">
+        <attribute name="name">
+          <value>menuItem266</value>
+        </attribute>
+        <attribute name="Label">
+          <value>2. Рассчитать продажи, очищенные от атипичных пиков</value>
+        </attribute>
+        <attribute name="Function">
+          <value>RuleGroupProcessor</value>
+        </attribute>
+        <attribute name="Arguments">
+          <value>AtipBehGr2</value>
+        </attribute>
+        <attribute name="MenuItemId">
+          <value>266</value>
+        </attribute>
+        <attribute name="Condition">
+          <value></value>
+        </attribute>
+        <attribute name="Message">
+          <value></value>
+        </attribute>
+        <attribute name="CommitAsap">
+          <value>false</value>
+        </attribute>
+        <attribute name="IntradayConcurrent">
+          <value>false</value>
+        </attribute>
+      </data_model>
+      <data_model type="MenuItem">
+        <attribute name="name">
+          <value>menuItem267</value>
+        </attribute>
+        <attribute name="Label">
+          <value>3. Рассчитать продажи, очищенные от дефицита</value>
+        </attribute>
+        <attribute name="Function">
+          <value>RuleGroupProcessor</value>
+        </attribute>
+        <attribute name="Arguments">
+          <value>SigmaClGr,ClearSlsGr,ClearSlsGr2</value>
+        </attribute>
+        <attribute name="MenuItemId">
+          <value>267</value>
+        </attribute>
+        <attribute name="Condition">
+          <value></value>
+        </attribute>
+        <attribute name="Message">
+          <value></value>
+        </attribute>
+        <attribute name="CommitAsap">
+          <value>false</value>
+        </attribute>
+        <attribute name="IntradayConcurrent">
+          <value>false</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="DynHiers">
+    <attribute name="name">
+      <value>DynHiers</value>
+    </attribute>
+  </data_model>
+  <data_model type="EditedMeasures">
+    <attribute name="name">
+      <value>EditedMeasures</value>
+    </attribute>
+  </data_model>
+  <data_model type="PercentToParents">
+    <attribute name="name">
+      <value>PercentToParents</value>
+    </attribute>
+  </data_model>
+</data_set>

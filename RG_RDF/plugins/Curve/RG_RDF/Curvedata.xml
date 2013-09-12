@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="java.lang.Object">
+  <attribute name="Version">
+    <value>110107</value>
+  </attribute>
+  <data_model type="java.lang.Object">
+    <attribute name="name">
+      <value>01</value>
+    </attribute>
+    <attribute name="Label">
+      <value>01 Itm/Str/Week</value>
+    </attribute>
+    <attribute name="Data Intersection">
+      <value>#LS_Int#</value>
+    </attribute>
+    <attribute name="Profile Type">
+      <value>User Defined Profile</value>
+    </attribute>
+    <attribute name="Profile Intersection">
+      <value>week_itm_str</value>
+    </attribute>
+    <attribute name="Aggregation Intersection">
+      <value>week_cls_str</value>
+    </attribute>
+    <attribute name="Approval Intersection">
+      <value>week_cls_str</value>
+    </attribute>
+    <attribute name="Stored Intersection">
+      <value>week_itm_str</value>
+    </attribute>
+    <attribute name="Source Data">
+      <value>lsover</value>
+    </attribute>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>02</value>
+      </attribute>
+      <attribute name="Label">
+        <value>02 Cls/Str/Week</value>
+      </attribute>
+      <attribute name="Data Intersection">
+        <value>#LS_Int#</value>
+      </attribute>
+      <attribute name="Profile Intersection">
+        <value>week_itm_str</value>
+      </attribute>
+      <attribute name="Aggregation Intersection">
+        <value>week_cls_str</value>
+      </attribute>
+      <attribute name="Stored Intersection">
+        <value>week_itm_str</value>
+      </attribute>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>03</value>
+      </attribute>
+      <attribute name="Label">
+        <value>03 Lvl2/Str/Week</value>
+      </attribute>
+      <attribute name="Data Intersection">
+        <value>#LS_Int#</value>
+      </attribute>
+      <attribute name="Profile Intersection">
+        <value>week_itm_str</value>
+      </attribute>
+      <attribute name="Aggregation Intersection">
+        <value>week_lvl2_str</value>
+      </attribute>
+      <attribute name="Stored Intersection">
+        <value>week_itm_str</value>
+      </attribute>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>04</value>
+      </attribute>
+      <attribute name="Label">
+        <value>04 Lvl1/Str/Week</value>
+      </attribute>
+      <attribute name="Data Intersection">
+        <value>#LS_Int#</value>
+      </attribute>
+      <attribute name="Profile Intersection">
+        <value>week_itm_str</value>
+      </attribute>
+      <attribute name="Aggregation Intersection">
+        <value>week_lvl1_str</value>
+      </attribute>
+      <attribute name="Stored Intersection">
+        <value>week_itm_str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

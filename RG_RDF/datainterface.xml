@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.datainterface.model.DataInterfaceSpecification">
+  <attribute name="name">
+    <value>dispec</value>
+  </attribute>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>cat_engT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>NaprT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ManT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ProjT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ActiveT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>GoodlineT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>PotrT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>OblprimT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>TsvetT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ZapahT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>VeshestvoT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>DennochT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ResultT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>TipkozhivolosT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ObyomT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>VesT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>FpostT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ArtikulT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>StatusT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>ProductT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>SeasonalityT</value>
+    </attribute>
+    <attribute name="appname">
+      <value>RDF_Simple</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>Promokoeff</value>
+    </attribute>
+    <attribute name="appname">
+      <value>Cmn</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>IsPromoB</value>
+    </attribute>
+    <attribute name="appname">
+      <value>Cmn</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>PromokoeffFuture</value>
+    </attribute>
+    <attribute name="appname">
+      <value>Cmn</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.datainterface.model.MeasDISpecification">
+    <attribute name="name">
+      <value>IsPromoFutureB</value>
+    </attribute>
+    <attribute name="appname">
+      <value>Cmn</value>
+    </attribute>
+  </data_model>
+</data_set>

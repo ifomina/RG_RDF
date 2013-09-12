@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>MovingAvg1</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MA_baseMaAvg</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>baseMaAvg=tssum(BaseMA,current-windowMA,current+windowMA)/(2*windowMA+1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MA_OutageMA</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>OutageMA=if(abs(BaseMA-baseMaAvg)/baseMaAvg&gt;thresholdMA,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MA_resultMA</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>resultMA=if(OutageMA&amp;&amp;ActivSkuB,(tssum(BaseMA,current-windowMA,current+windowMA)-BaseMA)/(2*windowMA),BaseMA)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

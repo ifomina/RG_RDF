@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>AtipBehGr1</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasClSAvgVre</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasClSAvgVre=if(PosDow==position([clnc].[dowc]),tssum(GoodPtsDefWinClS*SlsWithoutSeasClS,LeftBordSlsAvg,RightBordSlsAvg)/tssum(GoodPtsDefWinClS,LeftBordSlsAvg,RightBordSlsAvg),0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>GoodPts2ClS_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>GoodPtsAtipBehClS=if(ActivSkuSlsEOPB&amp;&amp;(lsover-SlsWithoutSeasClSAvg)&gt;ThrDeltaSlsWithoutSeasClSAvg*SlsWithoutSeasClSAvg,0,1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasClSAvg_cc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasClSAvg=SlsWithoutSeasClSAvgVre</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasAtipBeh_cc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasAtipBeh=if(GoodPtsAtipBehClS&lt;0.5,SlsWithoutSeasClSAvg,lsover)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsClearClSEnd_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsClearClSEnd=SlsWithoutSeasAtipBeh*KoefSeas</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

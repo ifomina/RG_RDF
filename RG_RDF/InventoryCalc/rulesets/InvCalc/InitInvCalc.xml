@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>InitInvCalc</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>Debit_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>Debit=DlvrAp+DlvrOth</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>Credit_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>Credit=Refund+Disposal+SlsRtl</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>Ind_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>Ind=current</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>IndInvFirst_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>IndInvFirst=indexfirst([clnd].top,InvtrRes.level([prod].top+[loc].top)&gt;0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EOP_calc1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EOP=if(Ind&lt;=IndInvFirst,if(Ind==IndInvFirst,InvtrResVre,lead(BOP)),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>PrizFirst_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>PrizFirst=if(current==indexfirst([clnd].top,InvtrRes.level([prod].top+[loc].top)&gt;0),true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>BOP_calc1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BOP=if(Ind&lt;=IndInvFirst,EOP+Credit-Debit,ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>InvtrResVre_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>InvtrResVre=InvtrRes</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

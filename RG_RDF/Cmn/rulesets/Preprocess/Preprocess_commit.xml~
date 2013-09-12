@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Preprocess_commit</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>commit</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsClearClSEnd2_commit</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsClearClSEnd2.master=SlsClearClSEnd2</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsover_commit</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsover.master=SlsClearClSEnd2</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DateCalcPrprD_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DateCalcPrprD=now</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DateCalcPrprD_commit</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DateCalcPrprD.master=DateCalcPrprD</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

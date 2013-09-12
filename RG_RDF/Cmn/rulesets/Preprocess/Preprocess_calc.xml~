@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Preprocess_calc</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>calc</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsp1_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsp1=ls1/BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsp3_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsp3=ls3/BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsp4_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsp4=ls4/BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsp15_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsp15=ls15/BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>Ref3_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>Ref3=BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsp_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsp=ls/BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsM_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsM=lsoverM-BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lspM_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lspM=lsM/BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsover_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsover=if(MethodChose==0,BaseLsover,if(MethodChose==1,lsover1,if(MethodChose==3,lsover3,if(MethodChose==4,lsover4,if(MethodChose==15,lsover15,if(MethodChose==99,lsoverAvg,if(MethodChose==100,lsoverM,ignore)))))))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ls_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ls=lsover-BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>StartDateDeficitFlClI_cc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>StartDateDeficitFlClI=index([clnd].[day],StartDateDeficitFlClD)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EndDateDeficitFlClI_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EndDateDeficitFlClI=index([clnd].[day],EndDateDeficitFlClD)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>AllDaysDeficitPeriodFlCl</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AllDaysDeficitPeriodFlCl=if(current&lt;=EndDateDeficitFlClI&amp;&amp;current&gt;=StartDateDeficitFlClI,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>DeficitPeriodDaysFlCl_cc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DeficitPeriodDaysFlCl=if(current&lt;=EndDateDeficitFlClI&amp;&amp;current&gt;=StartDateDeficitFlClI&amp;&amp;EOPU==0,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FilterDeficitClMeas_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterDeficitClMeas=if(DeficitPeriodDaysFlCl/AllDaysDeficitPeriodFlCl&gt;ThresholdDeficitFlCl,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FilterSkuStoreCl_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterSkuStoreCl=if(FilterRegimCl==1,((!FilterDeficitEnabledCl)||FilterDeficitClMeas)&amp;&amp;((!FilterNewSkuEnabledCl)||IsNewSku),(FilterDeficitEnabledCl&amp;&amp;FilterDeficitClMeas)||(FilterNewSkuEnabledCl&amp;&amp;IsNewSku))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>LeftBordSlsAvg_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LeftBordSlsAvg=if(LeftOutageI-WinSlsWithoutSeasAvgLeft+1&lt;First,First,LeftOutageI-WinSlsWithoutSeasAvgLeft+1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RightBordSlsAvg_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RightBordSlsAvg=if(RightOutageI+WinSlsWithoutSeasAvgRight-1&gt;last,last,RightOutageI+WinSlsWithoutSeasAvgRight-1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lspAvg_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lspAvg=lsAvg/BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ThrPtsNumber_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ThrPtsNumber=(WinSlsWithoutSeasAvgLeft+WinSlsWithoutSeasAvgRight+1)*ThrPtsNumberP</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FirstDateCSAI_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FirstDateCSAI=index([clnd].[day],FirstDateCSAD)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>LastDateCSAI_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LastDateCSAI=index([clnd].[day],LastDateCSAD)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsAvgCSAI_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsAvgCSAI=if(current==first,tssum(if(EOPU&gt;0,SlsWithoutSeasClS2,0),FirstDateCSAI,LastDateCSAI)/tssum(if(EOPU&gt;0,1,0),FirstDateCSAI,LastDateCSAI),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsAvgCSA_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsAvgCSA=SlsAvgCSAI</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ClusItmStrCSAB_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ClusItmStrCSAB=if(SlsAvgCSA&lt;=ThrFirstSlsAvgCSA,if(position([clsa].[clsd])=="1",true,false),if(SlsAvgCSA&lt;=ThrLastSlsAvgCSA,if(position([clsa].[clsd])=="2",true,false),if(position([clsa].[clsd])=="3",true,false)))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ClusItmStrCSATVre_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ClusItmStrCSATVre=if(ClusItmStrCSAB,attribute("label",[clsa].current),"")</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ClusItmStrCSAT_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ClusItmStrCSAT=ClusItmStrCSATVre</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsClSFl_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsClSFl=if(FilterDeficitEnabledCl,if(current&gt;=StartDateDeficitFlClI&amp;&amp;current&lt;=EndDateDeficitFlClI,sal,0),sal)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>EOPClSFl_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>EOPClSFl=if(FilterDeficitEnabledCl,if(current&gt;=StartDateDeficitFlClI&amp;&amp;current&lt;=EndDateDeficitFlClI,EOPU,0),EOPU)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasClSFl_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasClSFl=if(FilterDeficitEnabledCl,if(current&gt;=StartDateDeficitFlClI&amp;&amp;current&lt;=EndDateDeficitFlClI,SlsWithoutSeasClS,0),SlsWithoutSeasClS)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverClSFl_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverClSFl=if(FilterDeficitEnabledCl,if(current&gt;=StartDateDeficitFlClI&amp;&amp;current&lt;=EndDateDeficitFlClI,lsover,0),lsover)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasAtipBeh2Fl</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasAtipBeh2Fl=if(FilterDeficitEnabledCl,if(current&gt;=StartDateDeficitFlClI&amp;&amp;current&lt;=EndDateDeficitFlClI,SlsWithoutSeasAtipBeh2,0),SlsWithoutSeasAtipBeh2)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsClearClSEnd2Fl_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsClearClSEnd2Fl=if(FilterDeficitEnabledCl,if(current&gt;=StartDateDeficitFlClI&amp;&amp;current&lt;=EndDateDeficitFlClI,SlsClearClSEnd2,0),SlsClearClSEnd2)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutPromoFl_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutPromoFl=if(FilterDeficitEnabledCl,if(current&gt;=StartDateDeficitFlClI&amp;&amp;current&lt;=EndDateDeficitFlClI,SlsWithoutPromo,0),SlsWithoutPromo)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterEopNullWinI</value>
+    </attribute>
+    <attribute name="description">
+      <value>Set 1 for any intx with zero EOPs in the some period before</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterEopNullWindowI=if(current&lt;=index([clnd].[day],now)&amp;&amp;current-WinEopNullLengthI&gt;=0&amp;&amp;tssum(abs(EOPU),current-WinEopNullLengthI,current)==0,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FilterEopNullWindowIEnd</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterEopNullWindowBEnd=if(tssum(abs(FilterEopNullWindowI),current,last)==0,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsWithoutSeasCut</value>
+    </attribute>
+    <attribute name="description">
+      <value>If there is window with zero EOPs then all clean sales before this window are zeroed.</value>
+    </attribute>
+    <attribute name="creator">
+      <value>GAV</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasCut=if(FilterEopNullWindowBEnd,SlsWithoutSeasClS2,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsClearClSEnd2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsClearClSEnd2=lsover*KoefSeas</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_GoodPntEopAndSlsI</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>GoodPntEopI=if(EOPU&gt;0,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_BaseLsoverEopNZU</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BaseLsoverEopNZU=GoodPntEopI*BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>BaseLsoverAvgULeft_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BaseLsoverAvgULeft=if(OutageA&amp;&amp;FilterEopNullWindowBEnd,if(min(tssum(GoodPntEopI,RightOutageI,RightBordSlsAvg)/(RightBordSlsAvg-RightOutageI+1),tssum(GoodPntEopI,LeftBordSlsAvg,LeftOutageI)/(LeftOutageI-LeftBordSlsAvg+1))&gt;=ThrPtsNumberP,tssum(BaseLsoverEopNZU,LeftBordSlsAvg,LeftOutageI)/tssum(GoodPntEopI,LeftBordSlsAvg,LeftOutageI),if(min(tssum(GoodPntEopI.level([loc].[city]),RightOutageI,RightBordSlsAvg)/(count([loc].[str],[loc].[city])*(RightBordSlsAvg-RightOutageI+1)),tssum(GoodPntEopI.level([loc].[city]),LeftBordSlsAvg,LeftOutageI)/(count([loc].[str],[loc].[city])*(LeftOutageI-LeftBordSlsAvg+1)))&gt;=ThrPtsNumberP,tssum(BaseLsoverEopNZU.level([loc].[city]),LeftBordSlsAvg,LeftOutageI)/tssum(GoodPntEopI.level([loc].[city]),LeftBordSlsAvg,LeftOutageI),if(min(tssum(GoodPntEopI.level([loc].[rgn]),RightOutageI,RightBordSlsAvg)/(count([loc].[str],[loc].[rgn])*(RightBordSlsAvg-RightOutageI+1)),tssum(GoodPntEopI.level([loc].[rgn]),LeftBordSlsAvg,LeftOutageI)/(count([loc].[str],[loc].[rgn])*(LeftOutageI-LeftBordSlsAvg+1)))&gt;=ThrPtsNumberP,tssum(BaseLsoverEopNZU.level([loc].[rgn]),LeftBordSlsAvg,LeftOutageI)/tssum(GoodPntEopI.level([loc].[rgn]),LeftBordSlsAvg,LeftOutageI),tssum(BaseLsoverEopNZU,LeftBordSlsAvg,LeftOutageI)/tssum(GoodPntEopI,LeftBordSlsAvg,LeftOutageI)))),BaseLsover)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>BaseLsoverAvgURight_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BaseLsoverAvgURight=if(OutageA&amp;&amp;FilterEopNullWindowBEnd,if(min(tssum(GoodPntEopI,RightOutageI,RightBordSlsAvg)/(RightBordSlsAvg-RightOutageI+1),tssum(GoodPntEopI,LeftBordSlsAvg,LeftOutageI)/(LeftOutageI-LeftBordSlsAvg+1))&gt;=ThrPtsNumberP,tssum(BaseLsoverEopNZU,RightOutageI,RightBordSlsAvg)/tssum(GoodPntEopI,RightOutageI,RightBordSlsAvg),if(min(tssum(GoodPntEopI.level([loc].[city]),RightOutageI,RightBordSlsAvg)/(count([loc].[str],[loc].[city])*(RightBordSlsAvg-RightOutageI+1)),tssum(GoodPntEopI.level([loc].[city]),LeftBordSlsAvg,LeftOutageI)/(count([loc].[str],[loc].[city])*(LeftOutageI-LeftBordSlsAvg+1)))&gt;=ThrPtsNumberP,tssum(BaseLsoverEopNZU.level([loc].[city]),RightOutageI,RightBordSlsAvg)/tssum(GoodPntEopI.level([loc].[city]),RightOutageI,RightBordSlsAvg),if(min(tssum(GoodPntEopI.level([loc].[rgn]),RightOutageI,RightBordSlsAvg)/(count([loc].[str],[loc].[rgn])*(RightBordSlsAvg-RightOutageI+1)),tssum(GoodPntEopI.level([loc].[rgn]),LeftBordSlsAvg,LeftOutageI)/(count([loc].[str],[loc].[rgn])*(LeftOutageI-LeftBordSlsAvg+1)))&gt;=ThrPtsNumberP,tssum(BaseLsoverEopNZU.level([loc].[rgn]),RightOutageI,RightBordSlsAvg)/tssum(GoodPntEopI.level([loc].[rgn]),RightOutageI,RightBordSlsAvg),tssum(BaseLsoverEopNZU,RightOutageI,RightBordSlsAvg)/tssum(GoodPntEopI,RightOutageI,RightBordSlsAvg)))),BaseLsover)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverAvgT_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverAvgT=if(OutageA&amp;&amp;FilterEopNullWindowBEnd,if(min(tssum(GoodPntEopI,RightOutageI,RightBordSlsAvg)/(RightBordSlsAvg-RightOutageI+1),tssum(GoodPntEopI,LeftBordSlsAvg,LeftOutageI)/(LeftOutageI-LeftBordSlsAvg+1))&gt;=ThrPtsNumberP,"Магазин",if(min(tssum(GoodPntEopI.level([loc].[city]),RightOutageI,RightBordSlsAvg)/(count([loc].[str],[loc].[city])*(RightBordSlsAvg-RightOutageI+1)),tssum(GoodPntEopI.level([loc].[city]),LeftBordSlsAvg,LeftOutageI)/(count([loc].[str],[loc].[city])*(LeftOutageI-LeftBordSlsAvg+1)))&gt;=ThrPtsNumberP,"Город",if(min(tssum(GoodPntEopI.level([loc].[rgn]),RightOutageI,RightBordSlsAvg)/(count([loc].[str],[loc].[rgn])*(RightBordSlsAvg-RightOutageI+1)),tssum(GoodPntEopI.level([loc].[rgn]),LeftBordSlsAvg,LeftOutageI)/(count([loc].[str],[loc].[rgn])*(LeftOutageI-LeftBordSlsAvg+1)))&gt;=ThrPtsNumberP,"Регион","Не найдено"))),"")</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>BaseLsoverAvgU_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BaseLsoverAvgU=BaseLsoverAvgULeft+(current-LeftOutageI)*(BaseLsoverAvgURight-BaseLsoverAvgULeft)/(RightOutageI-LeftOutageI)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverAvg_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverAvg=max(BaseLsoverAvgU,BaseLsover)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsAvg_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsAvg=lsoverAvg-BaseLsover</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FlagForHistoryCut</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FlagForHistoryCutI=if(current&gt;=MaxWinCloseStr&amp;&amp;tssum(StoreIsClosedI,current-MaxWinCloseStr,current)==MaxWinCloseStr,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_WorkDayIndexI</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>WorkDayIndexILeft=if(StoreIsClosedI==1,-1,index([clnd].[day]))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_WorkDayIndexIRight</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>WorkDayIndexIRight=if(StoreIsClosedI==1,last+1,index([clnd].[day]))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_CloseStrWinBordIL</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>CloseStrWinBordILeft=max(tsmax(WorkDayIndexILeft,first,current)-WinAvgCloseStrILeft,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_CloseStrWinBordIR</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>CloseStrWinBordIRight=min(tsmin(WorkDayIndexIRight,current,last)+WinAvgCloseStrIRight,last)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_lsoverCloseStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverCloseStr=if(tssum(FlagForHistoryCutI,current,last)==0,if(StoreIsClosedI==1&amp;&amp;tsmax(WorkDayIndexILeft,first,current)!=-1&amp;&amp;tsmin(WorkDayIndexIRight,current,last)!=last+1,tsavg(lsover,CloseStrWinBordILeft,tsmax(WorkDayIndexILeft,first,current))/2+tsavg(lsover,tsmin(WorkDayIndexIRight,current,last),CloseStrWinBordIRight)/2,0),0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

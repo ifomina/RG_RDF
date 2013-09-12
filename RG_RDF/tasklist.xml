@@ -1,0 +1,1728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="ValidationStates">
+  <attribute name="name">
+    <value>ValidationStates</value>
+  </attribute>
+  <attribute name="PatchVersion">
+    <value>13.3.0</value>
+  </attribute>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidStdWizard.Workbook2 (Standard Wizard)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidStdWizard</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook2 (Standard Wizard)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook2</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>week</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: Worksheet18</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet18</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MTH</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis.Worksheet: Worksheet26</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet26</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Параметры прогноза</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>CLND</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MTH</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.Workbook0 (Load Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook0 (Load Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook0</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Preprocess_load</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidAxis.Workbook2 (X-Axis)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook2 (X-Axis)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook2</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MEAS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate.RuleGroup: ABC_baseint</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleGroup: ABC_baseint</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Rule Group contains invalid rules.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: Worksheet24</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet24</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Параметры прогноза</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>mthd</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate.RuleGroup: calc_ABC</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleGroup: calc_ABC</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Rule Group contains invalid rules.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: FiltersCMNT</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: FiltersCMNT</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Работа с исключениями</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MEAS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleSet.ForecastCEOC (RuleSet)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleSet</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>ForecastCEOC (RuleSet)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>ForecastCEOC</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Fcst</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions.Rule: calc_ApproveMthdTmpT</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Rule: calc_ApproveMthdTmpT</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>This rule contains expressions that fail the parse check.
+A measure appears on both the left and right side of an expression.
+</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.ForecastCEOC (Load Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>ForecastCEOC (Load Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>ForecastCEOC</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Fcst_load</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: Worksheet24</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet24</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Параметры прогноза</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MTH</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.Workbook2 (Commit Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook2 (Commit Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook2</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>SeasKoef_commit</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: ClSlsDefParCMNS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClSlsDefParCMNS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Очистка продаж</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate.RuleGroup: BANG_PROD</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleGroup: BANG_PROD</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Rule Group contains invalid rules.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: Worksheet18</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet18</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>week</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>mthd</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate.RuleGroup: Gen_mape</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleGroup: Gen_mape</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Rule Group contains invalid rules.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: ClSlsDParGrCMNS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClSlsDParGrCMNS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Очистка продаж</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>clsd</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.measure.model.MeasurePropertyValidation.generateValidationPoint.SubstMethod (Range)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.measure.model.MeasurePropertyValidation.generateValidationPoint</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>SubstMethod (Range)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Range: Invalid range format.  Arguments must be valid integers.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate.RuleGroup: ABC_calc</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleGroup: ABC_calc</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Rule Group contains invalid rules.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroupString.Workbook2 (Refresh Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroupString</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook2 (Refresh Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook2</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>SeasKoef_refresh</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis.Worksheet: Worksheet27</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet27</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PRMH</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: ClusSlsAvgS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClusSlsAvgS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Классы по средним продажам</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: Worksheet28</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet28</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: Worksheet19</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet19</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Выбранный прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MEAS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroupString.ForecastCEOC (Refresh Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroupString</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>ForecastCEOC (Refresh Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>ForecastCEOC</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Fcst_refresh</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: ClSlsDParGrCMNS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClSlsDParGrCMNS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Очистка продаж</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MEAS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.ForecastCEOC (Calc Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>ForecastCEOC (Calc Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>ForecastCEOC</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Fcst_calc</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: Worksheet28</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet28</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: ParamCSA</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ParamCSA</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Классы по средним продажам</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis.Worksheet: chosen_fcst_sh</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: chosen_fcst_sh</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Выбранный прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MTH</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions.Rule: MarkSegmT_calc</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Rule: MarkSegmT_calc</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>This rule contains expressions that fail the parse check.
+</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidStdWizard.Workbook0 (Standard Wizard)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidStdWizard</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook0 (Standard Wizard)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook0</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>day</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: optimparams</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: optimparams</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>mthd</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis.Worksheet: Worksheet18</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet18</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PRMH</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>INTS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroupString.Workbook0 (Refresh Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroupString</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook0 (Refresh Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook0</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Preprocess_refresh</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate.RuleGroup: DefAttr_calc</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleGroup: DefAttr_calc</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Rule Group contains invalid rules.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.ForecastCEOC (Commit Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>ForecastCEOC (Commit Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>ForecastCEOC</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Fcst_commit</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions.Rule: Clusters_calc_1</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Rule: Clusters_calc_1</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>This rule contains expressions that fail the parse check.
+</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate.RuleGroup: Fcst_load</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleGroupValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleGroup: Fcst_load</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Rule Group contains invalid rules.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions.Rule: calc_AbcResultX</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Rule: calc_AbcResultX</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>This rule contains expressions that fail the parse check.
+</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: ParamCSA</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ParamCSA</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Классы по средним продажам</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: FilterPosCMNT</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: FilterPosCMNT</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Работа с исключениями</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleSet.Workbook2 (RuleSet)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleSet</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook2 (RuleSet)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook2</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>SeasKoef</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis.Worksheet: FilterPosCMNT</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: FilterPosCMNT</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Работа с исключениями</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>FL</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: chosen_fcst_sh</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: chosen_fcst_sh</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Выбранный прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>week</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>filt</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidAxis.ForecastCEOC (X-Axis)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>ForecastCEOC (X-Axis)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>ForecastCEOC</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MEAS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.Workbook0 (Commit Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook0 (Commit Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook0</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Preprocess_commit</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: ClSlsDefParCMNS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClSlsDefParCMNS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Очистка продаж</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.Workbook0 (Calc Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook0 (Calc Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook0</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Preprocess_calc</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.RuleSetValidation.validate.RuleSet: Fcst</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.RuleSetValidation.validate</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>RuleSet: Fcst</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Contains invalid RuleGroups.</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidStdWizard.ForecastCEOC (Standard Wizard)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidStdWizard</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>ForecastCEOC (Standard Wizard)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>ForecastCEOC</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: ClusSlsAvgS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClusSlsAvgS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Классы по средним продажам</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: Worksheet27</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet27</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>week</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>mthd</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions.Rule: load_AbcResultResultX</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.rule.newmodel.ExpressionValidation.validateExpressions</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Rule: load_AbcResultResultX</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Rules</value>
+    </attribute>
+    <attribute name="Message">
+      <value>This rule contains expressions that fail the parse check.
+</value>
+    </attribute>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: optimparams</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: optimparams</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MTH</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis.Worksheet: ClearSlsDefCMNS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClearSlsDefCMNS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Очистка продаж</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>FL</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.Workbook2 (Calc Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook2 (Calc Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook2</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>SeasKoef_calc</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: Worksheet26</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet26</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Параметры прогноза</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MEAS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: chosen_fcst_sh</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: chosen_fcst_sh</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Выбранный прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>FL</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: ClearSlsDefCMNS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClearSlsDefCMNS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Очистка продаж</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>day</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx.Worksheet: FilterPosCMNT</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidBaseIntx</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: FilterPosCMNT</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Работа с исключениями</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>day</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>itm</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>str</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidAxis.Workbook0 (X-Axis)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook0 (X-Axis)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook0</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MEAS</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup.Workbook2 (Load Rules)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleGroup</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook2 (Load Rules)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook2</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>SeasKoef_load</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: Worksheet27</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: Worksheet27</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>MTH</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis.Worksheet: optimparams</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidUnassignedAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: optimparams</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Прогноз</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>CLND</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleSet.Workbook0 (RuleSet)</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WbkGenPropsValidator.isValidRuleSet</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Workbook0 (RuleSet)</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Workbook0</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>Preprocess</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="ValState">
+    <attribute name="name">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis.Worksheet: ClearSlsDefCMNS</value>
+    </attribute>
+    <attribute name="ValPoint">
+      <value>com.retek.ride.workbook.validators.WkShtPropsValidator.isValidAxis</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Worksheet: ClearSlsDefCMNS</value>
+    </attribute>
+    <attribute name="ApproxTargetLocation">
+      <value>Очистка продаж</value>
+    </attribute>
+    <attribute name="Message">
+      <value>Valid</value>
+    </attribute>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>PROD</value>
+      </attribute>
+    </data_model>
+    <data_model type="Affector">
+      <attribute name="name">
+        <value>LOC</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="WarningState">
+    <attribute name="name">
+      <value>BegDateNewSkuSlsClI (Default Spread)BegDateNewSkuSlsClI (Default Spread)</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>BegDateNewSkuSlsClI (Default Spread)</value>
+    </attribute>
+    <attribute name="RemotelyDependentObject">
+      <value>BegDateNewSkuSlsClI (Default Spread)</value>
+    </attribute>
+  </data_model>
+  <data_model type="WarningState">
+    <attribute name="name">
+      <value>AllDaysDeficitPeriodFlCl (Default Spread)AllDaysDeficitPeriodFlCl (Default Spread)</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>AllDaysDeficitPeriodFlCl (Default Spread)</value>
+    </attribute>
+    <attribute name="RemotelyDependentObject">
+      <value>AllDaysDeficitPeriodFlCl (Default Spread)</value>
+    </attribute>
+  </data_model>
+  <data_model type="WarningState">
+    <attribute name="name">
+      <value>FilterRegim (Default Spread)FilterRegim (Default Spread)</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>FilterRegim (Default Spread)</value>
+    </attribute>
+    <attribute name="RemotelyDependentObject">
+      <value>FilterRegim (Default Spread)</value>
+    </attribute>
+  </data_model>
+  <data_model type="WarningState">
+    <attribute name="name">
+      <value>Fcst_calcForecastCEOC</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Fcst_calc</value>
+    </attribute>
+    <attribute name="RemotelyDependentObject">
+      <value>ForecastCEOC</value>
+    </attribute>
+  </data_model>
+  <data_model type="WarningState">
+    <attribute name="name">
+      <value>Fcst_loadForecastCEOC</value>
+    </attribute>
+    <attribute name="ValTarget">
+      <value>Fcst_load</value>
+    </attribute>
+    <attribute name="RemotelyDependentObject">
+      <value>ForecastCEOC</value>
+    </attribute>
+  </data_model>
+</data_set>

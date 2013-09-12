@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.measure.model.ExternalMeasureSet">
+  <attribute name="name">
+    <value>ExternalMeasures</value>
+  </attribute>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#DateCalcPrprD</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#DateCalcPrpr D</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#DateCalcPrprI</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#DateCalcPrpr I</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#EOPv2</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#EOP v2</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#IsPromoB</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#IsPromo B</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#IsPromoFutureB</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#IsPromoFuture B</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Promokoeff</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Promokoeff</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#PromokoeffFuture</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#PromokoeffFuture</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#SlsClearClSEnd</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#SlsClearClS End</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#SlsClearClSEnd2</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#SlsClearClSEnd2</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#SlsRtl</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#SlsRtl</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#SlsWithoutPromo</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#SlsWithoutPromo</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#lsover</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#lsover</value>
+    </attribute>
+  </data_model>
+</data_set>

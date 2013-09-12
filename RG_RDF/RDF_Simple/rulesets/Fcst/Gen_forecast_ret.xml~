@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Gen_forecast_ret</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RetroStartDateClnd</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RetroStartDateClnd=indexlast([clnd].top,SlsWb&gt;0)-5</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RetroStartDateInt</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RetroStartDateInt=RetroStartDateClnd.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RetroStartDate</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RetroStartDate=indextostartdate(RetroStartDateInt,[clnd].[week])</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstLL</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstLL&lt;-Forecast(HISTORY:SlsWb.level([clnd].[week]+[prod].[itm]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[itm]+[loc].[str]+[mth].top),MASK:MaskLL,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MaskWkItmStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MaskWkItmStr=if(FlagForCalcWkItmStr,Method,7)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MaskWkLineStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MaskWkLineStr=if(FlagForCalcWkLineStr,Method,7)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkItmStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkItmStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[itm]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[itm]+[loc].[str]),MASK:MaskWkItmStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkLineStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkLineStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[line]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[line]+[loc].[str]),MASK:MaskWkLineStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser1Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr1]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr1]+[loc].[str]),MASK:MaskWkUser1Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkItmStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkItmStr=if(FlagForCalcWkItmStr,RFcstWkItmStr,ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWeekLineStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkLineStr=if(FlagForCalcWkLineStr,RFcstWkLineStr*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[line]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkUser1Str</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkUser1Str=if(FlagForCalcWkUser1Str,RFcstWkUser1Str*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[usr1]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser2Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr2]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr2]+[loc].[str]),MASK:MaskWkUser2Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkUser1S_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkUser2Str=if(FlagForCalcWkUser2Str,RFcstWkUser2Str*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[usr2]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser3Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr3]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr3]+[loc].[str]),MASK:MaskWkUser3Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkUser1S_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkUser3Str=if(FlagForCalcWkUser3Str,RFcstWkUser3Str*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[usr3]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser4Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr4]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr4]+[loc].[str]),MASK:MaskWkUser4Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkUser1S_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkUser4Str=if(FlagForCalcWkUser4Str,RFcstWkUser4Str*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[usr4]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkCatStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkCatStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[cat]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[cat]+[loc].[str]),MASK:MaskWkCatStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkCatStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkCatStr=if(FlagForCalcWkCatStr,RFcstWkCatStr*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[cat]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkPrmsStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkPrmsStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[prms]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[prms]+[loc].[str]),MASK:MaskWkPrmsStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstPrmsStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkPrmsStr=if(FlagForCalcWkPrmsStr,RFcstWkPrmsStr*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[prms]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

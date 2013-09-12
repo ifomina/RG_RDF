@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="Workbook">
+  <attribute name="name">
+    <value>Workbook1</value>
+  </attribute>
+  <attribute name="Label">
+    <value>Расчет остатков</value>
+  </attribute>
+  <attribute name="WorkbookLib">
+    <value>Templates</value>
+  </attribute>
+  <attribute name="WorkbookType">
+    <value>DynamicTemplate</value>
+  </attribute>
+  <attribute name="IsWizardOnly">
+    <value>false</value>
+  </attribute>
+  <attribute name="IsImageEnabled">
+    <value>false</value>
+  </attribute>
+  <attribute name="RuleSet">
+    <value>InvCalc</value>
+  </attribute>
+  <attribute name="LoadRules">
+    <value>InvCalc_load</value>
+  </attribute>
+  <attribute name="CommitRules">
+    <value>InvCalc_commit</value>
+  </attribute>
+  <attribute name="CalcRules">
+    <value>InvCalc_calc</value>
+  </attribute>
+  <attribute name="RefreshRules">
+    <value>InvCalc_refresh</value>
+  </attribute>
+  <attribute name="IsUseDefaults">
+    <value>true</value>
+  </attribute>
+  <attribute name="DpmDimensions">
+    <value></value>
+  </attribute>
+  <attribute name="IsCustomWizard">
+    <value>false</value>
+  </attribute>
+  <data_model type="AxisInfo">
+    <attribute name="name">
+      <value>AxisInfo</value>
+    </attribute>
+    <attribute name="MEASAxis">
+      <value>YAxis</value>
+    </attribute>
+    <attribute name="MEASOrder">
+      <value>0</value>
+    </attribute>
+    <attribute name="LOCAxis">
+      <value>ZAxis</value>
+    </attribute>
+    <attribute name="LOCOrder">
+      <value>0</value>
+    </attribute>
+    <attribute name="PRODAxis">
+      <value>ZAxis</value>
+    </attribute>
+    <attribute name="PRODOrder">
+      <value>1</value>
+    </attribute>
+  </data_model>
+  <data_model type="Wizards">
+    <attribute name="name">
+      <value>Wizards</value>
+    </attribute>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>LOCWizard</value>
+      </attribute>
+      <attribute name="LOCOrder">
+        <value>0</value>
+      </attribute>
+      <attribute name="LOCDim">
+        <value>str</value>
+      </attribute>
+      <attribute name="LOCRestrictedDimension">
+        <value>str</value>
+      </attribute>
+      <attribute name="LOCLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="LOCRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="LOCMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="LOCWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>PRODWizard</value>
+      </attribute>
+      <attribute name="PRODOrder">
+        <value>1</value>
+      </attribute>
+      <attribute name="PRODDim">
+        <value>itm</value>
+      </attribute>
+      <attribute name="PRODRestrictedDimension">
+        <value>itm</value>
+      </attribute>
+      <attribute name="PRODLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="PRODRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="PRODMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="PRODWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>CLNDWizard</value>
+      </attribute>
+      <attribute name="CLNDOrder">
+        <value>2</value>
+      </attribute>
+      <attribute name="CLNDDim">
+        <value>day</value>
+      </attribute>
+      <attribute name="CLNDRestrictedDimension">
+        <value>day</value>
+      </attribute>
+      <attribute name="CLNDLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="CLNDRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="CLNDMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="CLNDWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="WorkbookTabs">
+    <attribute name="name">
+      <value>WorkbookTabs</value>
+    </attribute>
+    <data_model type="WorkbookTab">
+      <attribute name="name">
+        <value>WorkbookTab0</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Расчет остатков</value>
+      </attribute>
+      <data_model type="Worksheets">
+        <attribute name="name">
+          <value>Worksheets</value>
+        </attribute>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>Worksheet1</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Расчет начального остатка</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>day_itm_str</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>BOP</value>
+                <value>Credit</value>
+                <value>Debit</value>
+                <value>Disposal</value>
+                <value>DlvrAp</value>
+                <value>DlvrOth</value>
+                <value>InvtrRes</value>
+                <value>Refund</value>
+                <value>SlsRtl</value>
+                <value>PrizFirst</value>
+                <value>Ind</value>
+                <value>EOPv2</value>
+                <value>EOPX</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>BOP</value>
+                <value>Credit</value>
+                <value>Debit</value>
+                <value>Disposal</value>
+                <value>DlvrAp</value>
+                <value>DlvrOth</value>
+                <value>InvtrRes</value>
+                <value>Refund</value>
+                <value>SlsRtl</value>
+                <value>PrizFirst</value>
+                <value>Ind</value>
+                <value>EOPv2</value>
+                <value>EOPX</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>DlvrOth</value>
+                <value>Refund</value>
+                <value>DlvrAp</value>
+                <value>Disposal</value>
+                <value>Debit</value>
+                <value>Credit</value>
+                <value>BOP</value>
+                <value>EOPX</value>
+                <value>InvtrRes</value>
+                <value>SlsRtl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>DlvrOth</value>
+                <value>Refund</value>
+                <value>DlvrAp</value>
+                <value>Disposal</value>
+                <value>Debit</value>
+                <value>Credit</value>
+                <value>BOP</value>
+                <value>EOPX</value>
+                <value>InvtrRes</value>
+                <value>SlsRtl</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>Worksheet3</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Расчет остатка на конец дня</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>day_itm_str</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>Disposal</value>
+                <value>DlvrOth</value>
+                <value>Refund</value>
+                <value>SlsRtl</value>
+                <value>DlvrAp</value>
+                <value>Debit</value>
+                <value>Credit</value>
+                <value>InvtrRes</value>
+                <value>EOPv2</value>
+                <value>Reserv_out</value>
+                <value>Reserv_in</value>
+                <value>Available_qtty</value>
+                <value>BOPv2X</value>
+                <value>EOPX</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>Disposal</value>
+                <value>DlvrOth</value>
+                <value>Refund</value>
+                <value>SlsRtl</value>
+                <value>DlvrAp</value>
+                <value>Debit</value>
+                <value>Credit</value>
+                <value>InvtrRes</value>
+                <value>EOPv2</value>
+                <value>Reserv_out</value>
+                <value>Reserv_in</value>
+                <value>Available_qtty</value>
+                <value>BOPv2X</value>
+                <value>EOPX</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>InvtrRes</value>
+                <value>Disposal</value>
+                <value>DlvrAp</value>
+                <value>DlvrOth</value>
+                <value>Refund</value>
+                <value>SlsRtl</value>
+                <value>Debit</value>
+                <value>Credit</value>
+                <value>EOPv2</value>
+                <value>Reserv_in</value>
+                <value>Reserv_out</value>
+                <value>Available_qtty</value>
+                <value>BOPv2X</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>InvtrRes</value>
+                <value>Disposal</value>
+                <value>DlvrAp</value>
+                <value>DlvrOth</value>
+                <value>Refund</value>
+                <value>SlsRtl</value>
+                <value>Debit</value>
+                <value>Credit</value>
+                <value>EOPv2</value>
+                <value>Reserv_in</value>
+                <value>Reserv_out</value>
+                <value>Available_qtty</value>
+                <value>BOPv2X</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="Menu">
+    <attribute name="name">
+      <value>Menu4</value>
+    </attribute>
+    <attribute name="Label">
+      <value>Расчет остатков</value>
+    </attribute>
+    <data_model type="MenuItems">
+      <attribute name="name">
+        <value>MenuItems</value>
+      </attribute>
+      <data_model type="MenuItem">
+        <attribute name="name">
+          <value>menuItem143</value>
+        </attribute>
+        <attribute name="Label">
+          <value>InitionalInventoryCalc</value>
+        </attribute>
+        <attribute name="Function">
+          <value>RuleGroupProcessor</value>
+        </attribute>
+        <attribute name="Arguments">
+          <value>InitInvCalc</value>
+        </attribute>
+        <attribute name="MenuItemId">
+          <value>143</value>
+        </attribute>
+        <attribute name="Condition">
+          <value></value>
+        </attribute>
+        <attribute name="Message">
+          <value></value>
+        </attribute>
+        <attribute name="CommitAsap">
+          <value>false</value>
+        </attribute>
+        <attribute name="IntradayConcurrent">
+          <value>false</value>
+        </attribute>
+      </data_model>
+      <data_model type="MenuItem">
+        <attribute name="name">
+          <value>menuItem144</value>
+        </attribute>
+        <attribute name="Label">
+          <value>EOPCalc</value>
+        </attribute>
+        <attribute name="Function">
+          <value>RuleGroupProcessor</value>
+        </attribute>
+        <attribute name="Arguments">
+          <value>EOPCalcGr</value>
+        </attribute>
+        <attribute name="MenuItemId">
+          <value>144</value>
+        </attribute>
+        <attribute name="Condition">
+          <value></value>
+        </attribute>
+        <attribute name="Message">
+          <value></value>
+        </attribute>
+        <attribute name="CommitAsap">
+          <value>false</value>
+        </attribute>
+        <attribute name="IntradayConcurrent">
+          <value>false</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="DynHiers">
+    <attribute name="name">
+      <value>DynHiers</value>
+    </attribute>
+  </data_model>
+  <data_model type="EditedMeasures">
+    <attribute name="name">
+      <value>EditedMeasures</value>
+    </attribute>
+  </data_model>
+  <data_model type="PercentToParents">
+    <attribute name="name">
+      <value>PercentToParents</value>
+    </attribute>
+  </data_model>
+</data_set>

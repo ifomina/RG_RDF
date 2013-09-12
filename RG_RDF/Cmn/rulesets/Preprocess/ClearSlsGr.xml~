@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>ClearSlsGr</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsover3_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LSOVER:lsover3Vre,LS:ls3=preprocess(SRC:BaseLsover,METHODID:3,LSTODAY:lstoday,NPTS:npst,REFERENCE:Ref3,OUTAGE:OutageA,DELTA:Delta)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsover1_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LSOVER:lsover1Vre,LS:ls1=preprocess(SRC:BaseLsover,METHODID:1,LSTODAY:lstoday,NPTS:npst,WINDOW:Window)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsover4_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LSOVER:lsover4Vre,LS:ls4=preprocess(SRC:BaseLsover,METHODID:4,LSTODAY:lstoday,NPTS:npst,OUTAGE:OutageA,ALPHA:alpha,NPAST:Npast,NFUT:Nfut)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsover15_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LSOVER:lsover15Vre,LS:ls15=preprocess(SRC:BaseLsover,METHODID:15,LSTODAY:lstoday,NPTS:npst,OUTAGE:OutageA,REFERENCE:BaseLsover,DEVIATION:Deviation,NSIGMAOUT_MAX:Nsigma_max,NSIGMAOUT_MIN:Nsigma_min,NSIGMAADJ_MAX:Nsigmaadj_max,NSIGMAADJ_MIN:Nsigmaadj_min,FRCST_MIN:Frcst_min,HIST_MIN_FS:Hist_min_fs)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Vre2</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultTmpT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultTmpT=if(position([prod].[cat])==position([pror].[catr]),if(AbcStrResultI-ABCStrSlsU&lt;=StrAThres*ABCStrSlsU.level([loc].top),"A",if(AbcStrResultI-ABCStrSlsU&lt;=StrBThres*ABCStrSlsU.level([loc].top),"B","C")),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultT=AbcStrResultTmpT.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultVreT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultVreT=if(position([loc].[str])==position([locs].[strs]),AbcStrResultT,ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AbcStrResultCopyT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AbcStrResultCopyT=AbcStrResultVreT.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_ABCResultStrsTmpT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ABCResultStrsTmpT=if(position([loc].[str])==position([locs].[strs]),AbcStrResultT,ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_ABCResultStrsT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ABCResultStrsT=ABCResultStrsTmpT.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstMsg_2_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FcstMsg="Расчет ABC: выполнено."</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MaskWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MaskWkUser2Str=if(FlagForCalcWkUser2Str,Method,7)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkUser2Str,CHMETHOD:AutoESMethodMthdTWkUser2Str.level([prod].[usr2]),chalpha:chalfaWkUser2Str,chtrend:chtrendWkUser2Str,chlevel:chlevelWkUser2Str,chgamma:chgammaWkUser2Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr2]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr2]+[loc].[str]),MASK:MaskWkUser2Str,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FinFcstWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FinFcstWkUser2Str=if(FlagForCalcWkUser2Str,FcstWkUser2Str*FcstLL/FcstLL.level([clnd].[week]+[prod].[usr2]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FinFcstVV1WkUser1Str__1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FinFcstVV1WkUser2Str=if(FlagForCalcWkUser2Str,tssum(FinFcstWkUser2Str,current+52,current+52),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MaskWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MaskWkUser3Str=if(FlagForCalcWkUser3Str,Method,7)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkUser3Str,CHMETHOD:AutoESMethodMthdTWkUser3Str.level([prod].[usr3]),chalpha:chalfaWkUser3Str,chtrend:chtrendWkUser3Str,chlevel:chlevelWkUser3Str,chgamma:chgammaWkUser3Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr3]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr3]+[loc].[str]),MASK:MaskWkUser3Str,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FinFcstWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FinFcstWkUser3Str=if(FlagForCalcWkUser3Str,FcstWkUser3Str*FcstLL/FcstLL.level([clnd].[week]+[prod].[usr3]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FinFcstVV1WkUser1Str__2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FinFcstVV1WkUser3Str=if(FlagForCalcWkUser3Str,tssum(FinFcstWkUser3Str,current+52,current+52),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MaskWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MaskWkUser4Str=if(FlagForCalcWkUser4Str,Method,7)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkUser4Str,CHMETHOD:AutoESMethodMthdTWkUser4Str.level([prod].[usr4]),chalpha:chalfaWkUser4Str,chtrend:chtrendWkUser4Str,chlevel:chlevelWkUser4Str,chgamma:chgammaWkUser4Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr4]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr4]+[loc].[str]),MASK:MaskWkUser4Str,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FinFcstWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FinFcstWkUser4Str=if(FlagForCalcWkUser4Str,FcstWkUser4Str*FcstLL/FcstLL.level([clnd].[week]+[prod].[usr4]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>FinFcstVV1WkUser1Str__3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FinFcstVV1WkUser4Str=if(FlagForCalcWkUser4Str,tssum(FinFcstWkUser4Str,current+52,current+52),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser2Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr2]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr2]+[loc].[str]),MASK:MaskWkUser2Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkUser1S_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkUser2Str=if(FlagForCalcWkUser2Str,RFcstWkUser2Str*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[usr2]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser3Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr3]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr3]+[loc].[str]),MASK:MaskWkUser3Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkUser1S_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkUser3Str=if(FlagForCalcWkUser3Str,RFcstWkUser3Str*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[usr3]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser4Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr4]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr4]+[loc].[str]),MASK:MaskWkUser4Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFinFcstWkUser1S_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RFinFcstWkUser4Str=if(FlagForCalcWkUser4Str,RFcstWkUser4Str*RFcstLL/RFcstLL.level([clnd].[week]+[prod].[usr4]+[loc].[str]),ignore)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MapeWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MapeWkUser2Str=tsmape(RFinFcstWkUser2Str,SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MadWkUser1Str_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MadWkUser2Str=tsmae(RFinFcstWkUser2Str,SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_WMAPEWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>WMAPEWkUser2Str=tssum(abs(SlsMthd-RFinFcstWkUser2Str),RStartIndex,REndIndex)/tssum(SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_BiasWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BiasWkUser2Str=tssum(SlsMthd-RFinFcstWkUser2Str,RStartIndex,REndIndex)/RetroWindow</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_DetWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DetWkUser2Str=tssum(pow(RFinFcstWkUser2Str-SlsMthdRetAvg,2),RStartIndex,REndIndex)/tssum(pow(SlsMthd-SlsMthdRetAvg,2),RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MapeWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MapeWkUser3Str=tsmape(RFinFcstWkUser3Str,SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MadWkUser1Str_calc_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MadWkUser3Str=tsmae(RFinFcstWkUser3Str,SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_WMAPEWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>WMAPEWkUser3Str=tssum(abs(SlsMthd-RFinFcstWkUser3Str),RStartIndex,REndIndex)/tssum(SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_BiasWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BiasWkUser3Str=tssum(SlsMthd-RFinFcstWkUser3Str,RStartIndex,REndIndex)/RetroWindow</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_DetWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DetWkUser3Str=tssum(pow(RFinFcstWkUser3Str-SlsMthdRetAvg,2),RStartIndex,REndIndex)/tssum(pow(SlsMthd-SlsMthdRetAvg,2),RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_MapeWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MapeWkUser4Str=tsmape(RFinFcstWkUser4Str,SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>MadWkUser1Str_calc_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>MadWkUser4Str=tsmae(RFinFcstWkUser4Str,SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_WMAPEWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>WMAPEWkUser4Str=tssum(abs(SlsMthd-RFinFcstWkUser4Str),RStartIndex,REndIndex)/tssum(SlsMthd,RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_BiasWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BiasWkUser4Str=tssum(SlsMthd-RFinFcstWkUser4Str,RStartIndex,REndIndex)/RetroWindow</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_DetWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>DetWkUser4Str=tssum(pow(RFinFcstWkUser4Str-SlsMthdRetAvg,2),RStartIndex,REndIndex)/tssum(pow(SlsMthd-SlsMthdRetAvg,2),RStartIndex,REndIndex)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

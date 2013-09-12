@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.measure.model.ExternalMeasureSet">
+  <attribute name="name">
+    <value>ExternalMeasures</value>
+  </attribute>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#BegDateNewSkuSlsD</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#BegDateNewSkuSls D</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#EOPv2</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#EOP v2</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#NewSkuB</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#NewSku B</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#SlsRtl</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#SlsRtl</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#wkEndD</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#wkEnd D</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#wkStartD</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#wkStart D</value>
+    </attribute>
+  </data_model>
+</data_set>

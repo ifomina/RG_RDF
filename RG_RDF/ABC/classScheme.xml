@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="ClassScheme">
+  <attribute name="name">
+    <value>scheme</value>
+  </attribute>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="label">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Measures</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>ABC</value>
+      </attribute>
+      <attribute name="label">
+        <value>ABC</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AbcResult</value>
+        </attribute>
+        <attribute name="label">
+          <value>AbcResult</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AbcParent</value>
+        </attribute>
+        <attribute name="label">
+          <value>AbcParent</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AbcSales</value>
+        </attribute>
+        <attribute name="label">
+          <value>AbcSales</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ABCSort</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABCSort</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AbcThresAB</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABC Threshold A-B %</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AbcThresBC</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABC Threshold B-C %</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AbcPercent</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABC Percent of Ttl</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ProdA</value>
+        </attribute>
+        <attribute name="label">
+          <value>ProdA</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ProdB</value>
+        </attribute>
+        <attribute name="label">
+          <value>ProdB</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ProdARes</value>
+        </attribute>
+        <attribute name="label">
+          <value>ProdARes</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ProdBRes</value>
+        </attribute>
+        <attribute name="label">
+          <value>ProdBRes</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>XYZ</value>
+      </attribute>
+      <attribute name="label">
+        <value>XYZ</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZSigma</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ Sigma</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZSlsAvg</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ Average sales</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZWindowLength</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ window length</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZSqrDiffSlsAvgSls</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ square difference sales-average sales</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZKoeff</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ koefficient</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZThresXY</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ threshold XY</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZThresYZ</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ Threshold YZ</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZGroup</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ Group</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="dimattrtype">
+          <value>true</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZLastSalesDateIntClnd</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ Last sales date int clnd</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>XYZLastSalesDateInt</value>
+        </attribute>
+        <attribute name="label">
+          <value>XYZ Last sales date int</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Intx</value>
+    </attribute>
+    <attribute name="label">
+      <value>Intersection</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>clsstr</value>
+      </attribute>
+      <attribute name="label">
+        <value>Класс-Магазин</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>clsrgn</value>
+      </attribute>
+      <attribute name="label">
+        <value>Класс-Регион</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Postfix</value>
+    </attribute>
+    <attribute name="label">
+      <value>Postfix</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>X</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+      <attribute name="periodstartvalue">
+        <value></value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

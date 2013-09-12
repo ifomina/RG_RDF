@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="ClassScheme">
+  <attribute name="name">
+    <value>scheme</value>
+  </attribute>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="label">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Measures</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Fact</value>
+      </attribute>
+      <attribute name="label">
+        <value>Fact</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/Fact</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>InvtrRes</value>
+        </attribute>
+        <attribute name="label">
+          <value>InvtrRes</value>
+        </attribute>
+        <attribute name="description">
+          <value>Итог по инвентаризации</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>DlvrAp</value>
+        </attribute>
+        <attribute name="label">
+          <value>DlvrAp</value>
+        </attribute>
+        <attribute name="description">
+          <value>Поставки в аптеку</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>DlvrOth</value>
+        </attribute>
+        <attribute name="label">
+          <value>DlvrOth</value>
+        </attribute>
+        <attribute name="description">
+          <value>Прочие поставки</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Refund</value>
+        </attribute>
+        <attribute name="label">
+          <value>Refund</value>
+        </attribute>
+        <attribute name="description">
+          <value>Возврат</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsRtl</value>
+        </attribute>
+        <attribute name="label">
+          <value>SlsRtl</value>
+        </attribute>
+        <attribute name="description">
+          <value>Розничные продажи</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Disposal</value>
+        </attribute>
+        <attribute name="label">
+          <value>Disposal</value>
+        </attribute>
+        <attribute name="description">
+          <value>Списания</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>BOP</value>
+        </attribute>
+        <attribute name="label">
+          <value>BOP</value>
+        </attribute>
+        <attribute name="description">
+          <value>Остаток на начало периода</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>EOP</value>
+        </attribute>
+        <attribute name="label">
+          <value>EOP</value>
+        </attribute>
+        <attribute name="description">
+          <value>Остаток на конец периода</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Debit</value>
+        </attribute>
+        <attribute name="label">
+          <value>Debit</value>
+        </attribute>
+        <attribute name="description">
+          <value>Дебет</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Credit</value>
+        </attribute>
+        <attribute name="label">
+          <value>Credit</value>
+        </attribute>
+        <attribute name="description">
+          <value>Кредит</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Reserv_in</value>
+        </attribute>
+        <attribute name="label">
+          <value>Reserv_in</value>
+        </attribute>
+        <attribute name="description">
+          <value>В резерв</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Reserv_out</value>
+        </attribute>
+        <attribute name="label">
+          <value>Reserv_out</value>
+        </attribute>
+        <attribute name="description">
+          <value>Из резерва</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Available_qtty</value>
+        </attribute>
+        <attribute name="label">
+          <value>Available_qtty</value>
+        </attribute>
+        <attribute name="description">
+          <value>Доступный остаток</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Other1</value>
+      </attribute>
+      <attribute name="label">
+        <value>Other1</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/Other1</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Ind</value>
+        </attribute>
+        <attribute name="label">
+          <value>Ind</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>none</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>IndInvFirst</value>
+        </attribute>
+        <attribute name="label">
+          <value>IndInvFirst</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>none</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Postfix</value>
+    </attribute>
+    <attribute name="label">
+      <value>Postfix</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Vre</value>
+      </attribute>
+      <attribute name="label">
+        <value>Vre</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>PrizFirst</value>
+      </attribute>
+      <attribute name="label">
+        <value>PrizFirst</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>v2</value>
+      </attribute>
+      <attribute name="label">
+        <value>v2</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Additional</value>
+    </attribute>
+    <attribute name="label">
+      <value>Additional</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>X</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

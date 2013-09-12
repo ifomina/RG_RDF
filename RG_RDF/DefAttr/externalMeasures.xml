@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.measure.model.ExternalMeasureSet">
+  <attribute name="name">
+    <value>ExternalMeasures</value>
+  </attribute>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#MarkSegmT</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#MarkSegm T</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.ExternalMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ProductT</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Product T</value>
+    </attribute>
+  </data_model>
+</data_set>

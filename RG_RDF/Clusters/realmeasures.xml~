@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.measure.model.NativeMeasureSet">
+  <attribute name="name">
+    <value>NativeMeasures</value>
+  </attribute>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CentDistFlag</value>
+    </attribute>
+    <attribute name="label">
+      <value>Кластеры внутри заданного порога, да/нет</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>and</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CentDistFlag</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str`</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CentDistFlagTmp</value>
+    </attribute>
+    <attribute name="label">
+      <value>Кластеры внутри заданного порога, да/нет</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Scalar</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>and</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CentDistFlag Tmp</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CentroidDist</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>max</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CentroidDist</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CentroidDistMax</value>
+    </attribute>
+    <attribute name="label">
+      <value>Максимальное удаление от центра кластера</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Scalar</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CentroidDist Max</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CentroidDistP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Расстояние до центра кластера по профилю</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>max</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CentroidDist P</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CentroidP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Центры кластеров по профилю</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>moy_clst</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Centroid P</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>itm_clst</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CentroidToAvgP</value>
+    </attribute>
+    <attribute name="label">
+      <value>CentroidToAvg по профилю</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>moy_clst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CentroidToAvg P</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>itm_clst</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CloseClstDist</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>CLST</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CloseClstDist</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CloseClstDistP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Расстояние до ближайшего кластера по профилю</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>clst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CloseClstDist P</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CloseCluster</value>
+    </attribute>
+    <attribute name="type">
+      <value>int</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>clst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CloseCluster</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CloseClusterP</value>
+    </attribute>
+    <attribute name="label">
+      <value>ClosestCluster по профилю</value>
+    </attribute>
+    <attribute name="type">
+      <value>int</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>clst</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CloseCluster P</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CloseClusterT</value>
+    </attribute>
+    <attribute name="label">
+      <value>Ближайший кластер</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>CLST</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CloseCluster T</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CloseClusterTP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Ближайший кластер</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>clst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#CloseCluster T P</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ClustMeasP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Продажи нормированные</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>moy_itm</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ClustMeas P</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>itm_str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ClustMsg</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ClustMsg</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ClustNrmKoefP</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ClustNrmKoef P</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Sku</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ClusterMethod</value>
+    </attribute>
+    <attribute name="label">
+      <value>Метод кластеризации</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Scalar</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ClusterMethod</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ClusterNameT</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Str_clst</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig_pop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ClusterName T</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ClusterPortion</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>CLST</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ClusterPortion</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ClusterPortionP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Доля кластера по профилю</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>clst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ClusterPortion P</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Cohesion</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>CLST</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Cohesion</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#CohesionP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Cohesion по профилю</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>clst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Cohesion P</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#FormalMeas</value>
+    </attribute>
+    <attribute name="naval">
+      <value>0</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Scalar</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#FormalMeas</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ItmCluster</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="dimattrtype">
+      <value>true</value>
+    </attribute>
+    <attribute name="dimattrlabel">
+      <value>Кластер по параметрам</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ItmCluster</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>ambig_pop</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ItmClusterP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Кластер товара по профилю</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="dimattrtype">
+      <value>true</value>
+    </attribute>
+    <attribute name="dimattrlabel">
+      <value>Кластер по спросу</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ItmCluster P</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#MaxClstDistCent</value>
+    </attribute>
+    <attribute name="label">
+      <value>Максимальное расстояние от центра кластера</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Scalar</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#MaxClstDistCent</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#MethodClustNrm</value>
+    </attribute>
+    <attribute name="label">
+      <value>Метод нормирования</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Scalar</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="uitype">
+      <value>picklist</value>
+    </attribute>
+    <attribute name="range">
+      <value>0(Total),1(Maximum)</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#MethodClust Nrm</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#NumClusters</value>
+    </attribute>
+    <attribute name="label">
+      <value>Максимальное число кластеров</value>
+    </attribute>
+    <attribute name="naval">
+      <value>1</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>Scalar</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#NumClusters</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#NumClustersTmp</value>
+    </attribute>
+    <attribute name="naval">
+      <value>1</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#NumClusters Tmp</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Sku</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#PointMmbr</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#PointMmbr</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#PointMmbrP</value>
+    </attribute>
+    <attribute name="label">
+      <value>PointMemberShip по профилю</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#PointMmbr P</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#PointMmbrT</value>
+    </attribute>
+    <attribute name="label">
+      <value>Кластер товара</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig_pop</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#PointMmbr T</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#PointMmbrTmp</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm_clst</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig_pop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#PointMmbr Tmp</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>Str_clst</value>
+    </attribute>
+  </data_model>
+</data_set>

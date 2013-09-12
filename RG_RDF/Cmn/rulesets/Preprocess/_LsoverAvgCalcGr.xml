@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>_LsoverAvgCalcGr</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasClAvg2V_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasClAvg2Vre=if(GoodTssum2I&gt;0,tssum(if(EOPU&gt;0&amp;&amp;SlsWithoutSeasCut&gt;0,SlsWithoutSeasCut,0),LeftBordSlsAvg,RightBordSlsAvg)/GoodTssum2,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasClAvg2__1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasClAvg2=if(GoodTssum2I&gt;0,SlsWithoutSeasClAvg2Vre,if(GoodTssum2I.level([loc].[city])&gt;0,SlsWithoutSeasClAvg2Vre.level([loc].[city])/GoodTssum2I.level([loc].[city]),if(GoodTssum2I.level([loc].top)&gt;0,SlsWithoutSeasClAvg2Vre.level([loc].top)/GoodTssum2I.level([loc].top),0)))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>GoodTssum2_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>GoodTssum2=tssum(if(EOPU&gt;0&amp;&amp;SlsWithoutSeasCut&gt;0,1,0),LeftBordSlsAvg,RightBordSlsAvg)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>GoodTssum2I_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>GoodTssum2I=if(GoodTssum2&gt;0,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>GoodPtsAtipBehLsAvg_ca_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>GoodPtsAtipBehLsAvg=if(ActivSkuSlsEOPB&amp;&amp;(SlsWithoutSeasCut-SlsWithoutSeasClAvg2)&lt;=ThrDeltaSlsWithoutSeasClSAvg*SlsWithoutSeasClAvg2&amp;&amp;EOPU&gt;0,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>TssumForLsAvg_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TssumForLsAvg=tssum(if(GoodPtsAtipBehLsAvg,1,0),LeftBordSlsAvg,RightBordSlsAvg)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>TssumForLsAvgI_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>TssumForLsAvgI=if(TssumForLsAvg&gt;=ThrPtsNumber,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsAvgForLsAvgVre_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsAvgForLsAvgVre=if(TssumForLsAvgI&gt;0,tssum(if(GoodPtsAtipBehLsAvg,SlsWithoutSeasCut,0),LeftBordSlsAvg,RightBordSlsAvg)/TssumForLsAvg,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsoverAvg_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsoverAvg=if(OutageA&amp;&amp;TssumForLsAvgI.level([loc].top)&gt;0,max(if(TssumForLsAvgI&gt;0,SlsAvgForLsAvgVre,if(TssumForLsAvgI.level([loc].[city])&gt;0,SlsAvgForLsAvgVre.level([loc].[city])/TssumForLsAvgI.level([loc].[city]),SlsAvgForLsAvgVre.level([loc].top)/TssumForLsAvgI.level([loc].top))),SlsWithoutSeasCut),SlsWithoutSeasCut)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>lsAvg_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>lsAvg=lsoverAvg-SlsWithoutSeasCut</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

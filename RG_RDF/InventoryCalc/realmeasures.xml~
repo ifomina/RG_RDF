@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.measure.model.NativeMeasureSet">
+  <attribute name="name">
+    <value>NativeMeasures</value>
+  </attribute>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Available_qtty</value>
+    </attribute>
+    <attribute name="label">
+      <value>Доступный остаток</value>
+    </attribute>
+    <attribute name="description">
+      <value>Доступный остаток</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Available_qtty</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#BOP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Остаток на начало периода</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>pst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>none</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#BOP</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#BOPv2</value>
+    </attribute>
+    <attribute name="label">
+      <value>Остаток на начало периода</value>
+    </attribute>
+    <attribute name="description">
+      <value>Остаток на начало периода</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>pst</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>none</value>
+    </attribute>
+    <attribute name="viewtype">
+      <value>sync_first_lag</value>
+    </attribute>
+    <attribute name="syncwith">
+      <value>EOPv2,BOP</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#BOP v2</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#BOPv2X</value>
+    </attribute>
+    <attribute name="label">
+      <value>Остаток на начало периода</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#BOP v2 X</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Credit</value>
+    </attribute>
+    <attribute name="label">
+      <value>Кредит</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Credit</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Debit</value>
+    </attribute>
+    <attribute name="label">
+      <value>Дебет</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Debit</value>
+    </attribute>
+    <attribute name="previousdb">
+      <value>data/Measures</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Disposal</value>
+    </attribute>
+    <attribute name="label">
+      <value>Списания</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Disposal</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>#EOP_BaseInt#</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#DlvrAp</value>
+    </attribute>
+    <attribute name="label">
+      <value>Поставки в аптеку</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#DlvrAp</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>#EOP_BaseInt#</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#DlvrOth</value>
+    </attribute>
+    <attribute name="label">
+      <value>Прочие поставки</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#DlvrOth</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>#EOP_BaseInt#</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#EOP</value>
+    </attribute>
+    <attribute name="label">
+      <value>Остаток на конец периода</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>pet</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>none</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="viewtype">
+      <value>sync_lead_last</value>
+    </attribute>
+    <attribute name="syncwith">
+      <value>BOP,InvtrResVre</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#EOP</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#EOPX</value>
+    </attribute>
+    <attribute name="label">
+      <value>Остаток на конец периода</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>pet</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#EOP X</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#EOPv2</value>
+    </attribute>
+    <attribute name="label">
+      <value>Остатки</value>
+    </attribute>
+    <attribute name="description">
+      <value>Остаток на конец периода</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>pet</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#EOP v2</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Ind</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Ind</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>day_itm_str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#IndInvFirst</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#IndInvFirst</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#InvtrRes</value>
+    </attribute>
+    <attribute name="label">
+      <value>Итог по инвентаризации</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#InvtrRes</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>#EOP_BaseInt#</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#InvtrResVre</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm_str</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#InvtrRes Vre</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>day_itm_str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#PrizFirst</value>
+    </attribute>
+    <attribute name="type">
+      <value>boolean</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>or</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>read</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>read</value>
+    </attribute>
+    <attribute name="db">
+      <value>data</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#PrizFirst</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Refund</value>
+    </attribute>
+    <attribute name="label">
+      <value>Возврат</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Refund</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>#EOP_BaseInt#</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Reserv_in</value>
+    </attribute>
+    <attribute name="label">
+      <value>В резерв</value>
+    </attribute>
+    <attribute name="description">
+      <value>В резерв</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Reserv_in</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#Reserv_out</value>
+    </attribute>
+    <attribute name="label">
+      <value>Из резерва</value>
+    </attribute>
+    <attribute name="description">
+      <value>Из резерва</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#Reserv_out</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#SlsRtl</value>
+    </attribute>
+    <attribute name="label">
+      <value>Розничные продажи</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>day_itm_str</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>total</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>prop</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Fact</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#SlsRtl</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>#EOP_BaseInt#</value>
+    </attribute>
+  </data_model>
+</data_set>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Filter_calc</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterSkuStore</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterSkuStore=if(FilterRegim==1,(!FilterMapeEnabled||FilterMapeSkuStore)&amp;&amp;(!FilterMadEnabled||FilterMadSkuStore)&amp;&amp;(!FilterDetermEnabled||FilterDetermSkuStore)&amp;&amp;(!FilterLYEnabled||FilterLYSkuStore)&amp;&amp;(!FilterLWEnabled||FilterLWSkuStore)&amp;&amp;(!FilterWMapeEnabled||FilterWMapeSkuStore)&amp;&amp;(!FilterDeficitEnabled||FilterDeficitSkuStore)&amp;&amp;(!FilterNewSkuEnabled||FilterNewSkuMeas)&amp;&amp;(!FilterNonZeroFcstEnabled||FcstApprovedFilt.level([clnd].top)==0)&amp;&amp;(!FilterPromoEnabled||FilterPromoSkuStr),FilterMapeEnabled&amp;&amp;FilterMapeSkuStore||FilterMadEnabled&amp;&amp;FilterMadSkuStore||FilterDetermEnabled&amp;&amp;FilterDetermSkuStore||FilterLYEnabled&amp;&amp;FilterLYSkuStore||FilterLWEnabled&amp;&amp;FilterLWSkuStore||FilterWMapeEnabled&amp;&amp;FilterWMapeSkuStore||FilterDeficitEnabled&amp;&amp;FilterDeficitSkuStore||FilterNewSkuEnabled&amp;&amp;FilterNewSkuMeas||FilterNonZeroFcstEnabled&amp;&amp;FcstApprovedFilt.level([clnd].top)==0||FilterPromoEnabled&amp;&amp;FilterPromoSkuStr)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterStorePQ</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterStorePQ=FilterSkuStore</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterSkuPQ</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterSkuPQ=FilterSkuStore</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterLYSkuStore</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterLYSkuStore=if(abs(tssum(FcstApproved,FcstFirstWeekIndex,FcstFirstWeekIndex+FORECASTLENGTH)/tssum(SlsL1,FcstFirstWeekIndex,FcstFirstWeekIndex+FORECASTLENGTH)-1)&gt;=ThresholdDeltaLY,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstFirstDayB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FcstFirstDayB=if(current==index([clnd].[day],STARTDATEMEAS),true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>clc_FcstFirstWeekIndexCl</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FcstFirstWeekIndexClnd=indexfirst([clnd].top,FcstFirstDayB)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstFirstWeekIndex</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FcstFirstWeekIndex=FcstFirstWeekIndexClnd.ambig_pop</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterMapeSkuStore</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterMapeSkuStore=if(FilterMapeEnabled&amp;&amp;MapeChFilt&gt;=ThresholdMape,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterMadSkuStore</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterMadSkuStore=if(FilterMadEnabled&amp;&amp;MadChFilt&gt;=ThresholdMad,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>clc_FilterDetermSkuStore</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterDetermSkuStore=if(FilterDetermEnabled&amp;&amp;DetChFilt&lt;=ThresholdDeterm,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterWMapeSkuStore</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterWMapeSkuStore=if(FilterWMapeEnabled&amp;&amp;WMAPEChFilt&gt;=ThresholdWMape,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FilterLWSkuStore</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FilterLWSkuStore=if(abs((tssum(FcstApproved,FcstFirstWeekIndex,FcstFirstWeekIndex+FORECASTLENGTH-1)/FORECASTLENGTH)/(tssum(SlsWb,FcstFirstWeekIndex-LWwindow,FcstFirstWeekIndex-1)/LWwindow)-1)&gt;=ThresholdDeltaLW,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

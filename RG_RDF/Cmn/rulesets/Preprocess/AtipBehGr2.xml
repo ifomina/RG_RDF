@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>AtipBehGr2</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>GoodTssum2_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>GoodTssum2=if(EOPU&gt;0&amp;&amp;SlsWithoutSeasCut&gt;0,1,0)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>GoodTssum2I_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>GoodTssum2I=RightBordAtipBeh-LeftBordAtipBeh+1</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsWithoutSeasCutGU</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasCutGoodU=GoodTssum2*SlsWithoutSeasCut</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasClAvg2_cc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasClAvg2=if(tssum(GoodTssum2,LeftBordAtipBeh,RightBordAtipBeh)/(RightBordAtipBeh-LeftBordAtipBeh+1)&gt;=ThrPtsNumberAtipBehP,tssum(SlsWithoutSeasCutGoodU,LeftBordAtipBeh,RightBordAtipBeh)/tssum(GoodTssum2,LeftBordAtipBeh,RightBordAtipBeh),if(tssum(GoodTssum2.level([loc].[city]),LeftBordAtipBeh,RightBordAtipBeh)/(count([loc].[str],[loc].[city])*(RightBordAtipBeh-LeftBordAtipBeh+1))&gt;=ThrPtsNumberAtipBehP,tssum(SlsWithoutSeasCutGoodU.level([loc].[city]),LeftBordAtipBeh,RightBordAtipBeh)/tssum(GoodTssum2.level([loc].[city]),LeftBordAtipBeh,RightBordAtipBeh),if(tssum(GoodTssum2.level([loc].[rgn]),LeftBordAtipBeh,RightBordAtipBeh)/(count([loc].[str],[loc].[rgn])*(RightBordAtipBeh-LeftBordAtipBeh+1))&gt;=ThrPtsNumberAtipBehP,tssum(SlsWithoutSeasCutGoodU.level([loc].[rgn]),LeftBordAtipBeh,RightBordAtipBeh)/tssum(GoodTssum2.level([loc].[rgn]),LeftBordAtipBeh,RightBordAtipBeh),tssum(SlsWithoutSeasCutGoodU,LeftBordAtipBeh,RightBordAtipBeh)/tssum(GoodTssum2,LeftBordAtipBeh,RightBordAtipBeh))))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_SlsWithoutSeasCAvgT</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasClAvg2T=if(tssum(GoodTssum2,LeftBordAtipBeh,RightBordAtipBeh)/(RightBordAtipBeh-LeftBordAtipBeh+1)&gt;=ThrPtsNumberAtipBehP,"Магазин",if(tssum(GoodTssum2.level([loc].[city]),LeftBordAtipBeh,RightBordAtipBeh)/(count([loc].[str],[loc].[city])*(RightBordAtipBeh-LeftBordAtipBeh+1))&gt;=ThrPtsNumberAtipBehP,"Город",if(tssum(GoodTssum2.level([loc].[rgn]),LeftBordAtipBeh,RightBordAtipBeh)/(count([loc].[str],[loc].[rgn])*(RightBordAtipBeh-LeftBordAtipBeh+1))&gt;=ThrPtsNumberAtipBehP,"Регион","Не найдено")))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>SlsWithoutSeasAtipBeh2_c</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>SlsWithoutSeasAtipBeh2=if(AtipPntB,SlsWithoutSeasClAvg2,SlsWithoutSeasCut)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_BaseLsover</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>BaseLsover=SlsWithoutSeasAtipBeh2</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_AtipPntB</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>AtipPntB=if(ActivSkuSlsEOPB&amp;&amp;(SlsWithoutSeasCut-SlsWithoutSeasClAvg2)&gt;ThrDeltaSlsWithoutSeasClSAvg*SlsWithoutSeasClAvg2,true,false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>LeftBordAtipBeh_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>LeftBordAtipBeh=if(current-WinAtipBehLeft&lt;First,First,if(current+WinAtipBehRight&gt;last,last-WinAtipBehLeft-WinAtipBehRight,current-WinAtipBehLeft))</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RightBordAtipBeh_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>RightBordAtipBeh=LeftBordAtipBeh+WinAtipBehLeft+WinAtipBehRight</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>ThrPtsNumberAtipBeh_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>ThrPtsNumberAtipBeh=(WinAtipBehLeft+WinAtipBehRight+1)*ThrPtsNumberAtipBehP</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

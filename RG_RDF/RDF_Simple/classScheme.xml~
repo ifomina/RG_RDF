@@ -1,0 +1,4461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="ClassScheme">
+  <attribute name="name">
+    <value>scheme</value>
+  </attribute>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="label">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Measures</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Sales</value>
+      </attribute>
+      <attribute name="label">
+        <value>Sales</value>
+      </attribute>
+      <attribute name="type">
+        <value>real</value>
+      </attribute>
+      <attribute name="baseint">
+        <value>day_itm_str</value>
+      </attribute>
+      <attribute name="defagg">
+        <value>total</value>
+      </attribute>
+      <attribute name="defspread">
+        <value>prop</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/sales</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsMthdL1</value>
+        </attribute>
+        <attribute name="label">
+          <value>Sales L-1</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>#RDF_SlsMthd#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsMthdL2</value>
+        </attribute>
+        <attribute name="label">
+          <value>Sales L-2</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>#RDF_SlsMthd#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsMthdL3</value>
+        </attribute>
+        <attribute name="label">
+          <value>Sales L-3</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>#RDF_SlsMthd#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsWb</value>
+        </attribute>
+        <attribute name="label">
+          <value>Sales workbook</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>#RDF_SlsInt#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsL1</value>
+        </attribute>
+        <attribute name="label">
+          <value>Sales Ly</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>#RDF_SlsInt#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>lsoverfilt</value>
+        </attribute>
+        <attribute name="label">
+          <value>Очищенные продажи, шт.</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week_itm_str_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsRHS</value>
+        </attribute>
+        <attribute name="label">
+          <value>Продажи RHS</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_str_itmr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>salRDF</value>
+        </attribute>
+        <attribute name="label">
+          <value>salRDF</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsWithoutPromoRDF</value>
+        </attribute>
+        <attribute name="label">
+          <value>SlsWithoutPromoRDF</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Forecast</value>
+      </attribute>
+      <attribute name="label">
+        <value>Forecast</value>
+      </attribute>
+      <attribute name="type">
+        <value>real</value>
+      </attribute>
+      <attribute name="baseint">
+        <value>day_itm_str</value>
+      </attribute>
+      <attribute name="defagg">
+        <value>total</value>
+      </attribute>
+      <attribute name="defspread">
+        <value>prop</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/forecast</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Forecast by method&amp;intx</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_mthd_intx</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Fcst_temp</value>
+        </attribute>
+        <attribute name="label">
+          <value>Fcst_temp</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>chmethodMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Chosen method</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>chmethodMthdIntxS</value>
+        </attribute>
+        <attribute name="label">
+          <value>Выбранный метод</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstApprovedMthd</value>
+        </attribute>
+        <attribute name="label">
+          <value>Approved forecast method</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_mthd</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstApproved</value>
+        </attribute>
+        <attribute name="label">
+          <value>Approved forecast</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstApprovedFilt</value>
+        </attribute>
+        <attribute name="label">
+          <value>Approved forecast</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MthdIntxToApprove</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mthd Intx to Approve</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>or</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MapeMthdIntxToApprove</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mape Mthd Intx to Approve</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>average</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MthdPriority</value>
+        </attribute>
+        <attribute name="label">
+          <value>Приоритет метода</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>mthd</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>average</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstRatingMthd</value>
+        </attribute>
+        <attribute name="label">
+          <value>Forecast rating mthd</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>mthd</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>average</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstMsg</value>
+        </attribute>
+        <attribute name="label">
+          <value>Fcst Msg</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstLikeItem</value>
+        </attribute>
+        <attribute name="label">
+          <value>Forecast like item</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstCann</value>
+        </attribute>
+        <attribute name="label">
+          <value>Прогноз с учетом каннибализации</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstNextMnth</value>
+        </attribute>
+        <attribute name="label">
+          <value>Прогноз 30 дней</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SourceLevel</value>
+        </attribute>
+        <attribute name="label">
+          <value>Source level</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>SlsMthd</value>
+          </attribute>
+          <attribute name="label">
+            <value>Продажи</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>day_itm_str_mthd</value>
+          </attribute>
+          <attribute name="db">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>Fcst</value>
+          </attribute>
+          <attribute name="label">
+            <value>Прогноз</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>Mask</value>
+          </attribute>
+          <attribute name="label">
+            <value>Метод</value>
+          </attribute>
+          <attribute name="type">
+            <value>int</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>ambig</value>
+          </attribute>
+          <attribute name="defspread">
+            <value>repl</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FinFcst</value>
+          </attribute>
+          <attribute name="label">
+            <value>Фин. прогноз</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+          <attribute name="db">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>RFcst</value>
+          </attribute>
+          <attribute name="label">
+            <value>Ретро прогноз</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>RFinFcst</value>
+          </attribute>
+          <attribute name="label">
+            <value>Фин. ретро прогноз</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+          <attribute name="db">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>Deviations</value>
+          </attribute>
+          <attribute name="label">
+            <value>Deviations</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>Mape</value>
+            </attribute>
+            <attribute name="label">
+              <value>MAPE</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>average</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>Mad</value>
+            </attribute>
+            <attribute name="label">
+              <value>MAD</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>average</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>WMAPE</value>
+            </attribute>
+            <attribute name="label">
+              <value>WMAPE</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>average</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>Bias</value>
+            </attribute>
+            <attribute name="label">
+              <value>BIAS</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>average</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>Det</value>
+            </attribute>
+            <attribute name="label">
+              <value>Коэфф. детерминации</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>average</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>SlsMthdRetAvg</value>
+            </attribute>
+            <attribute name="label">
+              <value>Средние продажи в ретро окне</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>RMSE</value>
+            </attribute>
+            <attribute name="label">
+              <value>RMSE</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>#RDF_FinLvlMth#</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>average</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>Criterion</value>
+            </attribute>
+            <attribute name="label">
+              <value>Параметр критерия</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>#RDF_FinLvlMth#</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>average</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>ChMthd</value>
+          </attribute>
+          <attribute name="label">
+            <value>ChMthd</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>RChMthd</value>
+          </attribute>
+          <attribute name="label">
+            <value>RChMthd</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FlagForCalc</value>
+          </attribute>
+          <attribute name="label">
+            <value>Рассчитать прогноз</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>Scalar</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+          <attribute name="defspread">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+          <attribute name="db">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>chalfa</value>
+          </attribute>
+          <attribute name="label">
+            <value>Альфа</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>ambig</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>chtrend</value>
+          </attribute>
+          <attribute name="label">
+            <value>Тренд</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>ambig</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>chgamma</value>
+          </attribute>
+          <attribute name="label">
+            <value>Гамма</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>ambig</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>chlevel</value>
+          </attribute>
+          <attribute name="label">
+            <value>Уровень</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>ambig</value>
+          </attribute>
+          <attribute name="basestate">
+            <value>read</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>read</value>
+          </attribute>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstEdit</value>
+        </attribute>
+        <attribute name="label">
+          <value>Скорректированный прогноз, шт.</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MethodMinMape</value>
+        </attribute>
+        <attribute name="label">
+          <value>MethodMinMape</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FrcstEndDate</value>
+        </attribute>
+        <attribute name="label">
+          <value>FrcstEndDate</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>none</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>read</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>read</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AutoESMethod</value>
+        </attribute>
+        <attribute name="label">
+          <value>Выбранный метод (для AutoES)</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="naval">
+          <value>-1</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>read</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>read</value>
+        </attribute>
+        <attribute name="uitype">
+          <value>picklist</value>
+        </attribute>
+        <attribute name="range">
+          <value>-1( ),1(Simple),2(Holt),13(SeasonalES),10(Causal),6(Average),0(No Forecast),3(Croston),4(M.Winters),5(A.Winters),12(Simple Croston),8(Bayesian),9(Profile),7(Seasonal Regression),18(Moving Average),19(External Baseline)</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Params</value>
+      </attribute>
+      <attribute name="label">
+        <value>Params</value>
+      </attribute>
+      <attribute name="type">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/params</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Method</value>
+        </attribute>
+        <attribute name="label">
+          <value>Метод</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>mthd</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Intx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Intersection</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MaskMeas</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mask</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MethodS</value>
+        </attribute>
+        <attribute name="label">
+          <value>Method</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>mthd</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>none</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>read</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>read</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>PreRangeFcst</value>
+        </attribute>
+        <attribute name="label">
+          <value>PreRangeFcst</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_itmr_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>or</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>ForecastParams</value>
+      </attribute>
+      <attribute name="label">
+        <value>Forecast Parameters</value>
+      </attribute>
+      <attribute name="baseint">
+        <value>Scalar</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/fcstparams</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CAPRATIOS</value>
+        </attribute>
+        <attribute name="label">
+          <value>CAPRATIOS</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CAPS</value>
+        </attribute>
+        <attribute name="label">
+          <value>CAPS</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FORECASTLENGTH</value>
+        </attribute>
+        <attribute name="label">
+          <value>FORECASTLENGTH</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FRCSTSTART</value>
+        </attribute>
+        <attribute name="label">
+          <value>FRCSTSTART</value>
+        </attribute>
+        <attribute name="type">
+          <value>date</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FRCSTSTARTMEAS</value>
+        </attribute>
+        <attribute name="label">
+          <value>FRCSTSTARTMEAS</value>
+        </attribute>
+        <attribute name="type">
+          <value>date</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>HISTSTART</value>
+        </attribute>
+        <attribute name="label">
+          <value>HISTSTART</value>
+        </attribute>
+        <attribute name="type">
+          <value>date</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>KEEPCLAMPEDMAXB</value>
+        </attribute>
+        <attribute name="label">
+          <value>KEEPCLAMPEDMAXB</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>KEEPCLAMPEDMINB</value>
+        </attribute>
+        <attribute name="label">
+          <value>KEEPCLAMPEDMINB</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MAXALPHA</value>
+        </attribute>
+        <attribute name="label">
+          <value>MAXALPHA</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MAXB</value>
+        </attribute>
+        <attribute name="label">
+          <value>MAXB</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MAXWINTERSALPHA</value>
+        </attribute>
+        <attribute name="label">
+          <value>MAXWINTERSALPHA</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MINB</value>
+        </attribute>
+        <attribute name="label">
+          <value>MINB</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MINCAPHIST</value>
+        </attribute>
+        <attribute name="label">
+          <value>MINCAPHIST</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MINCROSTON</value>
+        </attribute>
+        <attribute name="label">
+          <value>MINCROSTON</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MINHOLT</value>
+        </attribute>
+        <attribute name="label">
+          <value>MINHOLT</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MINWINTERS</value>
+        </attribute>
+        <attribute name="label">
+          <value>MINWINTERS</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>PERIOD</value>
+        </attribute>
+        <attribute name="label">
+          <value>PERIOD</value>
+        </attribute>
+        <attribute name="description">
+          <value>Required</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SMOOTHBASELINE</value>
+        </attribute>
+        <attribute name="label">
+          <value>SMOOTHBASELINE</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>STARTDATEMEAS</value>
+        </attribute>
+        <attribute name="label">
+          <value>Начало прогноза</value>
+        </attribute>
+        <attribute name="description">
+          <value>Required</value>
+        </attribute>
+        <attribute name="type">
+          <value>date</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>TRENDDAMP</value>
+        </attribute>
+        <attribute name="label">
+          <value>TRENDDAMP</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>USECAPPING</value>
+        </attribute>
+        <attribute name="label">
+          <value>USECAPPING</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CAPINTERVALS</value>
+        </attribute>
+        <attribute name="label">
+          <value>CAPINTERVALS</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>VERBOSE</value>
+        </attribute>
+        <attribute name="label">
+          <value>VERBOSE</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RSTARTDATEMEAS</value>
+        </attribute>
+        <attribute name="label">
+          <value>Начало ретро прогноза</value>
+        </attribute>
+        <attribute name="type">
+          <value>date</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RetroWindow</value>
+        </attribute>
+        <attribute name="label">
+          <value>Окно для расчета отклонений</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="naval">
+          <value>6</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RStartIndex</value>
+        </attribute>
+        <attribute name="label">
+          <value>Start retro window index</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>REndIndex</value>
+        </attribute>
+        <attribute name="label">
+          <value>End retro window index</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MAWinLen</value>
+        </attribute>
+        <attribute name="label">
+          <value>Длина окна для скользящего среднего</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MAXWINTERSGAMMA</value>
+        </attribute>
+        <attribute name="label">
+          <value>Макс. гамма (Winters)</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SEASONALINDEXSMOOTH</value>
+        </attribute>
+        <attribute name="label">
+          <value>Коэффициент сглаживания сезонности</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MAXHOLTGAMMA</value>
+        </attribute>
+        <attribute name="label">
+          <value>Макс. гамма (Хольт)</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MAXPROFILEALPHA</value>
+        </attribute>
+        <attribute name="label">
+          <value>Макс. альфа (Профиль)</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FlagForDeleteFcst</value>
+        </attribute>
+        <attribute name="label">
+          <value>Удалить предыдущий прогноз</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>ForecastAnalysis</value>
+      </attribute>
+      <attribute name="label">
+        <value>Forecast Analysis</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/ForecastAnalysis</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MapeMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>MAPE</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RetroStartDateInt</value>
+        </attribute>
+        <attribute name="label">
+          <value>Retro start date int</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MadMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>MAD</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RetroFcstMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Retro forecast</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week_itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>prop</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+        <attribute name="db">
+          <value>data/RForecast</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RetroStartDateClnd</value>
+        </attribute>
+        <attribute name="label">
+          <value>Retro start date clnd</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RetroStartDate</value>
+        </attribute>
+        <attribute name="label">
+          <value>Retro start date</value>
+        </attribute>
+        <attribute name="type">
+          <value>date</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="db">
+          <value>data/RForecast</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>KoeffDeterminant</value>
+        </attribute>
+        <attribute name="label">
+          <value>Koeff Determinant</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>SqrDiffFcstSls</value>
+          </attribute>
+          <attribute name="label">
+            <value>Square difference forecast-sales</value>
+          </attribute>
+          <attribute name="type">
+            <value>real</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>week_itm_str_mthd_intx</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>total</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>SqrDiffSlsAvgSls</value>
+          </attribute>
+          <attribute name="label">
+            <value>Square difference sales-avg sales</value>
+          </attribute>
+          <attribute name="type">
+            <value>real</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>week_itm_str_mthd_intx</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>total</value>
+          </attribute>
+          <attribute name="defspread">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>DeterminantMthdIntx</value>
+          </attribute>
+          <attribute name="label">
+            <value>Koeff determinant</value>
+          </attribute>
+          <attribute name="type">
+            <value>real</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>itm_str_mthd_intx</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>ambig</value>
+          </attribute>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Filter</value>
+        </attribute>
+        <attribute name="label">
+          <value>Filter</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+        <attribute name="db">
+          <value>data/Filter</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterMape</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter Mape</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterMapeEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter Mape enabled</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>ThresholdMape</value>
+            </attribute>
+            <attribute name="label">
+              <value>Threshold Mape</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterMapeSkuStore</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter Mape Sku Store</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>itm_str</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>or</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterMad</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter Mad</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterMadEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter Mad enabled</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>ThresholdMad</value>
+            </attribute>
+            <attribute name="label">
+              <value>Threshold Mad</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterMadSkuStore</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter Mad Sku Store</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>itm_str</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>or</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterDeterminant</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter Determinant</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterDetermEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter Determinant enabled</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>ThresholdDeterm</value>
+            </attribute>
+            <attribute name="label">
+              <value>Threshold Determinant</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterDetermSkuStore</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter Determinant Sku Store</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>itm_str</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>or</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterSkuStore</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter Sku Store</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>itm_str</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>or</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterSkuPQ</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter Sku Position Query </value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>itm_str_filt</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>or</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterStorePQ</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter Store Position Query </value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>itm_str_filt</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>or</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterDeltaLY</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter delta LY</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterLYEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter delta LY enable</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>ThresholdDeltaLY</value>
+            </attribute>
+            <attribute name="label">
+              <value>Threshold delta LY</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterLYSkuStore</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter last year Sku Store</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>itm_str</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>or</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterLastWeeks</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter last weeks</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterLWEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter last weeks enable</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>ThresholdDeltaLW</value>
+            </attribute>
+            <attribute name="label">
+              <value>Threshold delta last weeks</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>LWwindow</value>
+            </attribute>
+            <attribute name="label">
+              <value>Last weeks window</value>
+            </attribute>
+            <attribute name="type">
+              <value>int</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterLWSkuStore</value>
+            </attribute>
+            <attribute name="label">
+              <value>Filter last weeks Sku Store</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>itm_str</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>or</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterDeficit</value>
+          </attribute>
+          <attribute name="label">
+            <value>FilterDeficit</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>Scalar</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>StartDateDeficitFl</value>
+            </attribute>
+            <attribute name="label">
+              <value>StartDateDeficitFl</value>
+            </attribute>
+            <attribute name="type">
+              <value>date</value>
+            </attribute>
+            <attribute name="defspread">
+              <value>none</value>
+            </attribute>
+            <attribute name="aggstate">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>EndDateDeficitFl</value>
+            </attribute>
+            <attribute name="label">
+              <value>EndDateDeficitFl</value>
+            </attribute>
+            <attribute name="type">
+              <value>date</value>
+            </attribute>
+            <attribute name="defspread">
+              <value>none</value>
+            </attribute>
+            <attribute name="aggstate">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>TheresholdDeficitFl</value>
+            </attribute>
+            <attribute name="label">
+              <value>TheresholdDeficitFl</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="defspread">
+              <value>none</value>
+            </attribute>
+            <attribute name="aggstate">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterDeficitEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>FilterDeficitEnabled</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="defspread">
+              <value>none</value>
+            </attribute>
+            <attribute name="aggstate">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterDeficitSkuStore</value>
+            </attribute>
+            <attribute name="label">
+              <value>FilterDeficitSkuStore</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>itm_str</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>or</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>AllDaysDeficitPeriod</value>
+            </attribute>
+            <attribute name="label">
+              <value>AllDaysDeficitPeriod</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>day</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>total</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>DeficitPeriodDays</value>
+            </attribute>
+            <attribute name="label">
+              <value>DeficitPeriodDays</value>
+            </attribute>
+            <attribute name="type">
+              <value>real</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>day_itm_str</value>
+            </attribute>
+            <attribute name="defagg">
+              <value>total</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterPromo</value>
+          </attribute>
+          <attribute name="label">
+            <value>FilterPromo</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>Scalar</value>
+          </attribute>
+          <attribute name="defspread">
+            <value>none</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>StartDatePromoFl</value>
+            </attribute>
+            <attribute name="label">
+              <value>StartDatePromoFl</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>EndDatePromoFl</value>
+            </attribute>
+            <attribute name="label">
+              <value>EndDatePromoFl</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterPromoEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>FilterPromoEnabled</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterPromoSkuStr</value>
+            </attribute>
+            <attribute name="label">
+              <value>FilterPromoSkuStr</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterRegim</value>
+          </attribute>
+          <attribute name="label">
+            <value>Режим фильтрации</value>
+          </attribute>
+          <attribute name="type">
+            <value>int</value>
+          </attribute>
+          <attribute name="naval">
+            <value>1</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>Scalar</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+          <attribute name="defspread">
+            <value>none</value>
+          </attribute>
+          <attribute name="aggstate">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+          <attribute name="viewtype">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+          <attribute name="uitype">
+            <value>picklist</value>
+          </attribute>
+          <attribute name="range">
+            <value>0(Пересечение),1(Объединение)</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterNewSku</value>
+          </attribute>
+          <attribute name="label">
+            <value>FilterNewSku</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>Scalar</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>StartDateNewSkuFl</value>
+            </attribute>
+            <attribute name="label">
+              <value>StartDateNewSkuFl</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>EndDateNewSkuFl</value>
+            </attribute>
+            <attribute name="label">
+              <value>EndDateNewSkuFl</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterNewSkuEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>FilterNewSkuEnabled</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterNewSkuMeas</value>
+            </attribute>
+            <attribute name="label">
+              <value>FilterNewSkuMeas</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterFcstNonZero</value>
+          </attribute>
+          <attribute name="label">
+            <value>Ненулевой прогноз по новинкам</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterNonZeroFcstEnabled</value>
+            </attribute>
+            <attribute name="label">
+              <value>Выводить новинки с нулевым прогнозом</value>
+            </attribute>
+            <attribute name="type">
+              <value>boolean</value>
+            </attribute>
+            <attribute name="baseint">
+              <value>Scalar</value>
+            </attribute>
+            <attribute name="db">
+              <value>#UNSPECIFIED#</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterPreprocess</value>
+          </attribute>
+          <attribute name="label">
+            <value>FilterPreprocess</value>
+          </attribute>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>ThrDateCalcPrpr</value>
+            </attribute>
+            <attribute name="label">
+              <value>ThrDateCalcPrpr</value>
+            </attribute>
+          </data_model>
+          <data_model type="MeasureClass">
+            <attribute name="name">
+              <value>FilterPreprocessPQ</value>
+            </attribute>
+            <attribute name="label">
+              <value>FilterPreprocessPQ</value>
+            </attribute>
+          </data_model>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MapeApprovedMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mape approved mthd intx</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig_pop</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MadApprovedMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mad approved mthd intx</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig_pop</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>DetermApprovedMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Determinant approved mthd intx</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig_pop</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MapeApproved</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mape approved</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_filt</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MadApproved</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mad approved</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_filt</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>DetermApproved</value>
+        </attribute>
+        <attribute name="label">
+          <value>Determinant approved</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_filt</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>VLY</value>
+        </attribute>
+        <attribute name="label">
+          <value>var LY</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>DeltaLYApproved</value>
+          </attribute>
+          <attribute name="label">
+            <value>Delta LY</value>
+          </attribute>
+          <attribute name="type">
+            <value>real</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>week_itm_str</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>total</value>
+          </attribute>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstFirstWeek</value>
+        </attribute>
+        <attribute name="label">
+          <value>Forecast first week</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FcstFirstWeekIndex</value>
+          </attribute>
+          <attribute name="label">
+            <value>Forecast first week index</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FcstFirstWeekIndexClnd</value>
+          </attribute>
+          <attribute name="label">
+            <value>Forecast first week index clnd</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FcstFirstDayB</value>
+          </attribute>
+          <attribute name="label">
+            <value>Forecast first day boolean</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>day</value>
+          </attribute>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>WMAPEGroup</value>
+        </attribute>
+        <attribute name="label">
+          <value>WMAPE Group</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>WMapeApproved</value>
+          </attribute>
+          <attribute name="label">
+            <value>WMape approved</value>
+          </attribute>
+          <attribute name="type">
+            <value>real</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>itm_str_filt</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>average</value>
+          </attribute>
+          <attribute name="defspread">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterWMapeEnabled</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter WMape enabled</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>Scalar</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>ThresholdWMape</value>
+          </attribute>
+          <attribute name="label">
+            <value>Threshold WMape</value>
+          </attribute>
+          <attribute name="type">
+            <value>real</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>Scalar</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>FilterWMapeSkuStore</value>
+          </attribute>
+          <attribute name="label">
+            <value>Filter WMape Sku Store</value>
+          </attribute>
+          <attribute name="type">
+            <value>boolean</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>itm_str</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>or</value>
+          </attribute>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>WMapeMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>WMAPE</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RetroFcstApprovedMthdInt</value>
+        </attribute>
+        <attribute name="label">
+          <value>Retro fcst approved</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week_itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>RetroFcstApproved</value>
+        </attribute>
+        <attribute name="label">
+          <value>Retro fcst approved</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week_itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>BiasMthdIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Bias Method Intx</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_mthd_intx</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>average</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>BiasApproved</value>
+        </attribute>
+        <attribute name="label">
+          <value>Bias Approved</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_filt</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>average</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MapeApprovedFilt</value>
+        </attribute>
+        <attribute name="label">
+          <value>Mape</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsWbLastWeek</value>
+        </attribute>
+        <attribute name="label">
+          <value>Индекс последней недели с продажами</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig_pop</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MinMape</value>
+        </attribute>
+        <attribute name="label">
+          <value>MainMape</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>#RDF_FinLvl#</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig_pop</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Approval</value>
+      </attribute>
+      <attribute name="label">
+        <value>Approval</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/Approval</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ApproveIntx</value>
+        </attribute>
+        <attribute name="label">
+          <value>Approve intersection </value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+        <attribute name="singlehierselect">
+          <value>intx</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ApproveMthd</value>
+        </attribute>
+        <attribute name="label">
+          <value>Approve method</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+        <attribute name="singlehierselect">
+          <value>mthd</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ApproveCriterion</value>
+        </attribute>
+        <attribute name="label">
+          <value>Критерий выбора прогноза</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="uitype">
+          <value>picklist</value>
+        </attribute>
+        <attribute name="range">
+          <value>wmape(WMAPE),rmse(RMSE)</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>NewSkusStores</value>
+      </attribute>
+      <attribute name="label">
+        <value>New SKUs</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/NewSkusStores</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LikeSku</value>
+        </attribute>
+        <attribute name="label">
+          <value>Товар-аналог</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="singlehierselect">
+          <value>itm</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LikeSkuFcstR</value>
+        </attribute>
+        <attribute name="label">
+          <value>Like Sku forecast RHS</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_str_itmr</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LikeSkuFcstLR</value>
+        </attribute>
+        <attribute name="label">
+          <value>Like Sku forecast LHS-&gt;RHS</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_itmr_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LikeSkuFcstRL</value>
+        </attribute>
+        <attribute name="label">
+          <value>Like Sku forecast RHS-&gt;LHS</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_itmr_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="uitype">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SubstMethod</value>
+        </attribute>
+        <attribute name="label">
+          <value>Метод подстановки</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="naval">
+          <value>1</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="uitype">
+          <value>picklist</value>
+        </attribute>
+        <attribute name="range">
+          <value>1(Нет), 2(Сезонность SKU), 3(Сезонность Магазин), 4(Сезонность SKU/Магазин), 5(Жизненный цикл SKU), 6(Жизненный цикл Магазин), 7(Жизненный цикл SKU/Магазин)</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LikeStore</value>
+        </attribute>
+        <attribute name="label">
+          <value>Магазин-аналог</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LikeSkuFcstRgnRL</value>
+        </attribute>
+        <attribute name="label">
+          <value>Like Sku Fcst Rgn RL</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_itmr_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LikeSkuFcstAbcRL</value>
+        </attribute>
+        <attribute name="label">
+          <value>Like Sku Fcst Abc RL</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_itmr_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Attributs</value>
+      </attribute>
+      <attribute name="label">
+        <value>Attributs</value>
+      </attribute>
+      <attribute name="type">
+        <value>boolean</value>
+      </attribute>
+      <attribute name="baseint">
+        <value>itm</value>
+      </attribute>
+      <attribute name="defagg">
+        <value>ambig</value>
+      </attribute>
+      <attribute name="defspread">
+        <value>repl</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/Attributs</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MarkSegm</value>
+        </attribute>
+        <attribute name="label">
+          <value>MarkSegm</value>
+        </attribute>
+        <attribute name="description">
+          <value>Сегмент рынка</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Potr</value>
+        </attribute>
+        <attribute name="label">
+          <value>Potr</value>
+        </attribute>
+        <attribute name="description">
+          <value>Продукт</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Product</value>
+        </attribute>
+        <attribute name="label">
+          <value>Product</value>
+        </attribute>
+        <attribute name="description">
+          <value>Продукт</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Zapah</value>
+        </attribute>
+        <attribute name="label">
+          <value>Zapah</value>
+        </attribute>
+        <attribute name="description">
+          <value>Запах</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Tsvet</value>
+        </attribute>
+        <attribute name="label">
+          <value>Tsvet</value>
+        </attribute>
+        <attribute name="description">
+          <value>Цвет</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Result</value>
+        </attribute>
+        <attribute name="label">
+          <value>Result</value>
+        </attribute>
+        <attribute name="description">
+          <value>Результат</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Dennoch</value>
+        </attribute>
+        <attribute name="label">
+          <value>Dennoch</value>
+        </attribute>
+        <attribute name="description">
+          <value>День/ночь</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Tipkozhivolos</value>
+        </attribute>
+        <attribute name="label">
+          <value>Tipkozhivolos</value>
+        </attribute>
+        <attribute name="description">
+          <value>Тип кожи</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>BrandId</value>
+        </attribute>
+        <attribute name="label">
+          <value>Бренд</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>NewSku</value>
+        </attribute>
+        <attribute name="label">
+          <value>Статус Новинка</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>NewSkuStatusPQ</value>
+        </attribute>
+        <attribute name="label">
+          <value>New sku status PQ</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FilterNewSkuPQ</value>
+        </attribute>
+        <attribute name="label">
+          <value>FilterNewSkuPQ</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ThresMAPEforSkuAnalog</value>
+        </attribute>
+        <attribute name="label">
+          <value>Порог MAPE для товаров аналогов</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AvgMAPE</value>
+        </attribute>
+        <attribute name="label">
+          <value>Среднее MAPE</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str_itmr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ThresBadPointCnt</value>
+        </attribute>
+        <attribute name="label">
+          <value>Порог доли атипичных дней</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>BadPointCnt</value>
+        </attribute>
+        <attribute name="label">
+          <value>Доля атипичных дней</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str_itmr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>BrandCann</value>
+        </attribute>
+        <attribute name="label">
+          <value>Бренд</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>cat_engCann</value>
+        </attribute>
+        <attribute name="label">
+          <value>Товарная категория English</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_filt</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>cat_eng</value>
+        </attribute>
+        <attribute name="label">
+          <value>Товарная категория English</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Price</value>
+        </attribute>
+        <attribute name="label">
+          <value>Цена, руб.</value>
+        </attribute>
+        <attribute name="type">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SkupID</value>
+        </attribute>
+        <attribute name="label">
+          <value>Код SKU</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>StrCode</value>
+        </attribute>
+        <attribute name="label">
+          <value>Код магазина</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SkupIDR</value>
+        </attribute>
+        <attribute name="label">
+          <value>Код SKU</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itmr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>StrCodeS</value>
+        </attribute>
+        <attribute name="label">
+          <value>Код магазина</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>strs</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Napr</value>
+        </attribute>
+        <attribute name="label">
+          <value>Napr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Man</value>
+        </attribute>
+        <attribute name="label">
+          <value>Man</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Proj</value>
+        </attribute>
+        <attribute name="label">
+          <value>Proj</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Active</value>
+        </attribute>
+        <attribute name="label">
+          <value>Active</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Goodline</value>
+        </attribute>
+        <attribute name="label">
+          <value>Goodline</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Oblprim</value>
+        </attribute>
+        <attribute name="label">
+          <value>Oblprim</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Veshestvo</value>
+        </attribute>
+        <attribute name="label">
+          <value>Veshestvo</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Obyom</value>
+        </attribute>
+        <attribute name="label">
+          <value>Obyom</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Ves</value>
+        </attribute>
+        <attribute name="label">
+          <value>Ves</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Fpost</value>
+        </attribute>
+        <attribute name="label">
+          <value>Fpost</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Artikul</value>
+        </attribute>
+        <attribute name="label">
+          <value>Artikul</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Status</value>
+        </attribute>
+        <attribute name="label">
+          <value>Status</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Seasonality</value>
+        </attribute>
+        <attribute name="label">
+          <value>Seasonality</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CLND_Attributes</value>
+        </attribute>
+        <attribute name="label">
+          <value>Атрибуты календаря</value>
+        </attribute>
+        <attribute name="type">
+          <value>date</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>wkStart</value>
+          </attribute>
+          <attribute name="label">
+            <value>Начало недели</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>wkEnd</value>
+          </attribute>
+          <attribute name="label">
+            <value>Конец недели</value>
+          </attribute>
+        </data_model>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>NewSkus</value>
+      </attribute>
+      <attribute name="label">
+        <value>NewSkus</value>
+      </attribute>
+      <attribute name="type">
+        <value>boolean</value>
+      </attribute>
+      <attribute name="baseint">
+        <value>itm_itmr</value>
+      </attribute>
+      <attribute name="defagg">
+        <value>or</value>
+      </attribute>
+      <attribute name="defspread">
+        <value>repl</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/NewSkus</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AnalogSku</value>
+        </attribute>
+        <attribute name="label">
+          <value>Товар-аналог</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AnalogKoef</value>
+        </attribute>
+        <attribute name="label">
+          <value>Коэффициент аналогии товара</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>prop</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>NewSkuPQ</value>
+        </attribute>
+        <attribute name="label">
+          <value>NewSkuPQ</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>BegDateNewSkuSls</value>
+        </attribute>
+        <attribute name="label">
+          <value>BegDateNewSkuSls</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>StoresForNewSku</value>
+        </attribute>
+        <attribute name="label">
+          <value>Магазины для новых товаров</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AssortMatrix</value>
+        </attribute>
+        <attribute name="label">
+          <value>Ассортиментная матрица</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SalesRHS</value>
+        </attribute>
+        <attribute name="label">
+          <value>Продажи товаров аналогов</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SalesRHSNZ</value>
+        </attribute>
+        <attribute name="label">
+          <value>Ненулевые продажи</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str_itmr</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Flag</value>
+        </attribute>
+        <attribute name="label">
+          <value>Flag</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ThresholdCntSku</value>
+        </attribute>
+        <attribute name="label">
+          <value>Порог для количества товаров-аналогов</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>average</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LevelStrGroup</value>
+        </attribute>
+        <attribute name="label">
+          <value>Уровень для выбора группы магазинов</value>
+        </attribute>
+        <attribute name="type">
+          <value>int</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="uitype">
+          <value>picklist</value>
+        </attribute>
+        <attribute name="range">
+          <value>0(Регион),1(ABC)</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>NewSkuAssortment</value>
+        </attribute>
+        <attribute name="label">
+          <value>New Sku Assortment</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>SkuInStr</value>
+          </attribute>
+          <attribute name="label">
+            <value>Sku In Store</value>
+          </attribute>
+          <attribute name="type">
+            <value>int</value>
+          </attribute>
+          <attribute name="baseint">
+            <value>itm_str</value>
+          </attribute>
+          <attribute name="defagg">
+            <value>total</value>
+          </attribute>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CntAnalogSkuNAbcStr</value>
+        </attribute>
+        <attribute name="label">
+          <value>Кол-во товаров-аналогов и магазинов того же класс</value>
+        </attribute>
+        <attribute name="type">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_itmr_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>EOP</value>
+      </attribute>
+      <attribute name="label">
+        <value>EOP</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Cannibalization</value>
+      </attribute>
+      <attribute name="label">
+        <value>Каннибализация</value>
+      </attribute>
+      <attribute name="basestate">
+        <value>write</value>
+      </attribute>
+      <attribute name="aggstate">
+        <value>write</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CannibalItem</value>
+        </attribute>
+        <attribute name="label">
+          <value>Каннибализация</value>
+        </attribute>
+        <attribute name="type">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_itmr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CannibalKoef</value>
+        </attribute>
+        <attribute name="label">
+          <value>Коэффициент каннибализации</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_itmr</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CannKoefRes</value>
+        </attribute>
+        <attribute name="label">
+          <value>Коэффициент каннибализации результирующий</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_itmr</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CannKoefItmRes</value>
+        </attribute>
+        <attribute name="label">
+          <value>CannKoefItmRes</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CannSkuPQ</value>
+        </attribute>
+        <attribute name="label">
+          <value>Cann Sku PQ</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_itmr</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>or</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>ABCStores</value>
+      </attribute>
+      <attribute name="label">
+        <value>Анализ магазинов ABC</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ABCStrSls</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABC Продажи</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>cmpp_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ABCStrSort</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABCStrSort</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>cmpp_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ABCStrParent</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABCStrParent</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>AbcStrResult</value>
+        </attribute>
+        <attribute name="label">
+          <value>AbcStrResult</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>cmpp_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig_pop</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>StrAThres</value>
+        </attribute>
+        <attribute name="label">
+          <value>Порог A-B</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>StrBThres</value>
+        </attribute>
+        <attribute name="label">
+          <value>Порог B-C</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ABCResultStrs</value>
+        </attribute>
+        <attribute name="label">
+          <value>ABC extended LOCR</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>cat_str_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig_pop</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FcstProrLocs</value>
+        </attribute>
+        <attribute name="label">
+          <value>Прогноз</value>
+        </attribute>
+        <attribute name="description">
+          <value>Прогноз на доп. орг. иерархии, заполненный только для новинок, по котором прогноз должен браться как среднее по ABC</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>week_itm_str_itmr_strs</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SameAbcClass</value>
+        </attribute>
+        <attribute name="label">
+          <value>Тот же класс по ABC</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_str_strs</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FirstDateABCStr</value>
+        </attribute>
+        <attribute name="label">
+          <value>FirstDateABCStr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>LastDateABCStr</value>
+        </attribute>
+        <attribute name="label">
+          <value>LastDateABCStr</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>NextMonth</value>
+      </attribute>
+      <attribute name="label">
+        <value>Next 30 days</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FlagNextMnth</value>
+        </attribute>
+        <attribute name="label">
+          <value>Флаг 30 дней</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Mapping</value>
+      </attribute>
+      <attribute name="label">
+        <value>Mapping</value>
+      </attribute>
+      <attribute name="description">
+        <value>Меры для маппинга товаров и/или магазинов</value>
+      </attribute>
+      <attribute name="db">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MapProd</value>
+        </attribute>
+        <attribute name="label">
+          <value>Маппинг по товарам</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>itm_itmr</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MapLoc</value>
+        </attribute>
+        <attribute name="label">
+          <value>Маппинг по магазинам</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str_strs</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Misc</value>
+      </attribute>
+      <attribute name="label">
+        <value>День недели</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>DoWPart</value>
+        </attribute>
+        <attribute name="label">
+          <value>Доля дня недели</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>dow_cat</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>average</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>SlsDoWCalc</value>
+        </attribute>
+        <attribute name="label">
+          <value>Продажи для расчета доли дня недели</value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>#RDF_SlsInt#</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>KoeffFcst</value>
+        </attribute>
+        <attribute name="label">
+          <value>Процент корректировки прогноза, % </value>
+        </attribute>
+        <attribute name="type">
+          <value>real</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_filt</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>repl</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MaxFcst30</value>
+        </attribute>
+        <attribute name="label">
+          <value>Максимальный прогноз на 30 дней</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FlagMaxFcst30</value>
+        </attribute>
+        <attribute name="label">
+          <value>Превышение прогноза, да/нет</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>IsCleaned</value>
+        </attribute>
+        <attribute name="label">
+          <value>IsCleaned</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>Blank</value>
+        </attribute>
+        <attribute name="label">
+          <value>_____________________</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>day_itm_str_mthd</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>ambig</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>none</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>read</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>read</value>
+        </attribute>
+        <attribute name="db">
+          <value>#UNSPECIFIED#</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Promo</value>
+      </attribute>
+      <attribute name="label">
+        <value>Promo</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>PromoKoefPastRDF</value>
+        </attribute>
+        <attribute name="label">
+          <value>PromoKoefPastRDF</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>PromoKoefFutureRDF</value>
+        </attribute>
+        <attribute name="label">
+          <value>PromoKoefFutureRDF</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>POSTFIX</value>
+    </attribute>
+    <attribute name="label">
+      <value>POSTFIX</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Copy</value>
+      </attribute>
+      <attribute name="label">
+        <value>Copy</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Vre</value>
+      </attribute>
+      <attribute name="label">
+        <value>Vre</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Tmp</value>
+      </attribute>
+      <attribute name="label">
+        <value>Tmp</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>RHS</value>
+      </attribute>
+      <attribute name="label">
+        <value>RHS</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>LL</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Ch</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Mthd</value>
+      </attribute>
+      <attribute name="label">
+        <value>Mthd</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>filtr</value>
+      </attribute>
+      <attribute name="label">
+        <value>filtr</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Src</value>
+      </attribute>
+      <attribute name="label">
+        <value>Источника</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>UOM</value>
+    </attribute>
+    <attribute name="label">
+      <value>UOM</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>T</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>B</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+      <attribute name="type">
+        <value>boolean</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Ix</value>
+      </attribute>
+      <attribute name="label">
+        <value>Ix</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>N</value>
+      </attribute>
+      <attribute name="label">
+        <value>N</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>D</value>
+      </attribute>
+      <attribute name="label">
+        <value>D</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>U</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+      <attribute name="type">
+        <value>real</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>I</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>P</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>R</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+      <attribute name="type">
+        <value>real</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V1</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V2</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V3</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V4</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V5</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>VV1</value>
+      </attribute>
+      <attribute name="label">
+        <value>VV1</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V6</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V7</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V8</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V9</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>V10</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>CLND</value>
+    </attribute>
+    <attribute name="label">
+      <value>CLND</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Wk</value>
+      </attribute>
+      <attribute name="label">
+        <value>неделя</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Day</value>
+      </attribute>
+      <attribute name="label">
+        <value>Day</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>PROD</value>
+    </attribute>
+    <attribute name="label">
+      <value>PROD</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Line</value>
+      </attribute>
+      <attribute name="label">
+        <value>Линия</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Itm</value>
+      </attribute>
+      <attribute name="label">
+        <value>SKU</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>User1</value>
+      </attribute>
+      <attribute name="label">
+        <value>User1</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>User2</value>
+      </attribute>
+      <attribute name="label">
+        <value>User2</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>User3</value>
+      </attribute>
+      <attribute name="label">
+        <value>User3</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>User4</value>
+      </attribute>
+      <attribute name="label">
+        <value>User4</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Cat</value>
+      </attribute>
+      <attribute name="label">
+        <value>Категория</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Prms</value>
+      </attribute>
+      <attribute name="label">
+        <value>Продукт-Сегмент рынка</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>LOC</value>
+    </attribute>
+    <attribute name="label">
+      <value>LOC</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Str</value>
+      </attribute>
+      <attribute name="label">
+        <value>Магазин</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>FL</value>
+    </attribute>
+    <attribute name="label">
+      <value>Filter</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Filt</value>
+      </attribute>
+      <attribute name="label">
+        <value>#UNSPECIFIED#</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

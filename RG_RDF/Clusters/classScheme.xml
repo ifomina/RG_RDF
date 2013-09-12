@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="ClassScheme">
+  <attribute name="name">
+    <value>scheme</value>
+  </attribute>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="label">
+      <value>Measures</value>
+    </attribute>
+    <attribute name="type">
+      <value>real</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Measures</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Clusters</value>
+      </attribute>
+      <attribute name="label">
+        <value>Clusters</value>
+      </attribute>
+      <attribute name="db">
+        <value>data/Clusters</value>
+      </attribute>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ClustMeas</value>
+        </attribute>
+        <attribute name="label">
+          <value>Параметры магазинов</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>str</value>
+        </attribute>
+        <attribute name="defagg">
+          <value>total</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>prop</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>write</value>
+        </attribute>
+        <attribute name="aggstate">
+          <value>write</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ClusProcedMeas</value>
+        </attribute>
+        <attribute name="label">
+          <value>ClusProcedMeas</value>
+        </attribute>
+        <attribute name="db">
+          <value>data/ClusProcedMeas</value>
+        </attribute>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>Centroid</value>
+          </attribute>
+          <attribute name="label">
+            <value>Центры кластеров</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>CentroidToAvg</value>
+          </attribute>
+          <attribute name="label">
+            <value>CentroidToAvg</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>CloseCluster</value>
+          </attribute>
+          <attribute name="label">
+            <value>ClosestCluster</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>CloseClstDist</value>
+          </attribute>
+          <attribute name="label">
+            <value>Расстояние до ближайшего кластера</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>ClusterPortion</value>
+          </attribute>
+          <attribute name="label">
+            <value>Доля кластера</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>Cohesion</value>
+          </attribute>
+          <attribute name="label">
+            <value>Cohesion</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>CentroidDist</value>
+          </attribute>
+          <attribute name="label">
+            <value>Расстояние до центра кластера</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>PointMmbr</value>
+          </attribute>
+          <attribute name="label">
+            <value>PointMemberShip</value>
+          </attribute>
+          <attribute name="type">
+            <value>int</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>NumClusters</value>
+          </attribute>
+          <attribute name="label">
+            <value>NumClusters</value>
+          </attribute>
+          <attribute name="type">
+            <value>int</value>
+          </attribute>
+        </data_model>
+        <data_model type="MeasureClass">
+          <attribute name="name">
+            <value>ClusterMethod</value>
+          </attribute>
+          <attribute name="label">
+            <value>ClusterMethod</value>
+          </attribute>
+          <attribute name="type">
+            <value>string</value>
+          </attribute>
+          <attribute name="uitype">
+            <value>#UNSPECIFIED#</value>
+          </attribute>
+        </data_model>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ClustNrmKoef</value>
+        </attribute>
+        <attribute name="label">
+          <value>ClustNormKoef</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MethodClust</value>
+        </attribute>
+        <attribute name="label">
+          <value>MethodClust</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>MaxClstDistCent</value>
+        </attribute>
+        <attribute name="label">
+          <value>MaxClustDistrCent</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>CentDistFlag</value>
+        </attribute>
+        <attribute name="label">
+          <value>PrizDistToCent</value>
+        </attribute>
+        <attribute name="type">
+          <value>boolean</value>
+        </attribute>
+        <attribute name="naval">
+          <value>false</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+        <attribute name="defspread">
+          <value>none</value>
+        </attribute>
+        <attribute name="basestate">
+          <value>read</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>FormalMeas</value>
+        </attribute>
+        <attribute name="label">
+          <value>FormalMeas</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ClusterName</value>
+        </attribute>
+        <attribute name="label">
+          <value>Имя кластера</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ItmCluster</value>
+        </attribute>
+        <attribute name="label">
+          <value>Кластер товара</value>
+        </attribute>
+      </data_model>
+      <data_model type="MeasureClass">
+        <attribute name="name">
+          <value>ClustMsg</value>
+        </attribute>
+        <attribute name="label">
+          <value>ClustMsg</value>
+        </attribute>
+        <attribute name="type">
+          <value>string</value>
+        </attribute>
+        <attribute name="baseint">
+          <value>Scalar</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>Postfix</value>
+    </attribute>
+    <attribute name="label">
+      <value>Postfix</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Tmp</value>
+      </attribute>
+      <attribute name="label">
+        <value>Vre</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>T</value>
+      </attribute>
+      <attribute name="label">
+        <value>Txt</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Nrm</value>
+      </attribute>
+      <attribute name="label">
+        <value>Norm</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>Max</value>
+      </attribute>
+      <attribute name="label">
+        <value>MaxTh</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="MeasureClass">
+    <attribute name="name">
+      <value>ClusterHiers</value>
+    </attribute>
+    <attribute name="label">
+      <value>Cluster Hierarchies</value>
+    </attribute>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>P</value>
+      </attribute>
+      <attribute name="label">
+        <value>по спросу</value>
+      </attribute>
+    </data_model>
+    <data_model type="MeasureClass">
+      <attribute name="name">
+        <value>R</value>
+      </attribute>
+      <attribute name="label">
+        <value>Property Hierarchy</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

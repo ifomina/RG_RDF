@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.measure.model.NativeMeasureSet">
+  <attribute name="name">
+    <value>NativeMeasures</value>
+  </attribute>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ABCSort</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm_str</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ABCSort</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>skup_str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#AbcParent</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>itm</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>repl</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/Parent</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#AbcParent</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>skup</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#AbcPercent</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#AbcPercent</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#AbcResult</value>
+    </attribute>
+    <attribute name="type">
+      <value>string</value>
+    </attribute>
+    <attribute name="defagg">
+      <value>ambig</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="db">
+      <value>data/AbcResult</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#AbcResult</value>
+    </attribute>
+    <attribute name="previousdefagg">
+      <value>total</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#AbcResultX</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#AbcResult X</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>itm_str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#AbcSales</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#AbcSales</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#AbcThresAB</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#AbcThresAB</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#AbcThresBC</value>
+    </attribute>
+    <attribute name="basestate">
+      <value>write</value>
+    </attribute>
+    <attribute name="aggstate">
+      <value>write</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#AbcThresBC</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ProdA</value>
+    </attribute>
+    <attribute name="type">
+      <value>boolean</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ProdA</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ProdARes</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>str</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ProdARes</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>itm_str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ProdAResX</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ProdARes X</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ProdB</value>
+    </attribute>
+    <attribute name="type">
+      <value>boolean</value>
+    </attribute>
+    <attribute name="defspread">
+      <value>#UNSPECIFIED#</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ProdB</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ProdBRes</value>
+    </attribute>
+    <attribute name="baseint">
+      <value>str</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ProdBRes</value>
+    </attribute>
+    <attribute name="previousbaseintx">
+      <value>itm_str</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#ProdBResX</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#ProdBRes X</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZGroup</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZGroup</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZKoeff</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZKoeff</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZLastSalesDateInt</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZLastSalesDateInt</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZLastSalesDateIntClnd</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZLastSalesDateIntClnd</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZSigma</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZSigma</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZSlsAvg</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZSlsAvg</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZSqrDiffSlsAvgSls</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZSqrDiffSlsAvgSls</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZThresXY</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZThresXY</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZThresYZ</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZThresYZ</value>
+    </attribute>
+  </data_model>
+  <data_model type="com.retek.ride.measure.model.NativeMeasure">
+    <attribute name="name">
+      <value>#INHERITED#XYZWindowLength</value>
+    </attribute>
+    <attribute name="materialized">
+      <value>PERSISTENT</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <attribute name="signature">
+      <value>#INHERITED#XYZWindowLength</value>
+    </attribute>
+  </data_model>
+</data_set>

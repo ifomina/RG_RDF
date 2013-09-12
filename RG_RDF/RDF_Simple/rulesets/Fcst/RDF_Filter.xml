@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>RDF_Filter</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>NewSkuPQB_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>NewSkuPQB=if((!TsvetB)||TsvetT==TsvetCopyT,if((!ResultB)||ResultT==ResultCopyT,if((!DennochB)||DennochT==DennochCopyT,if((!TipkozhivolosB)||TipkozhivolosT==TipkozhivolosCopyT,if((!MarkSegmB)||MarkSegmT==MarkSegmCopyT,if((!PotrB)||PotrT==PotrCopyT,if((!ProductB)||ProductT==ProductCopyT,if((!ZapahB)||ZapahT==ZapahCopyT,if((!BrandIdB)||BrandIdT==BrandIdCopyT,if(position([prod].[itm])!=position([pror].[itmr]),if(!NewSkuRHSB,if(SlsRHSU&gt;0,if(MapeRHS&lt;=ThresMAPEforSkuAnalogP,if(BadPointCntP&lt;=ThresBadPointCntP,true,false),false),false),false),false),false),false),false),false),false),false),false),false),false)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstMsg_4</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FcstMsg="Выполнено"</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

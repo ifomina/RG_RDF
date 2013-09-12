@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Gen_forecast_int</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstLL</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstLL,chalpha:chalfaLL,chtrend:chtrendLL,chlevel:chlevelLL,chgamma:chgammaLL&lt;-Forecast(HISTORY:SlsWb.level([clnd].[week]+[prod].[itm]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[itm]+[loc].[str]+[mth].top),MASK:MaskLL,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

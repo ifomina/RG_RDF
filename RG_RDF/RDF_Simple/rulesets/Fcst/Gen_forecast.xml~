@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="com.retek.ride.rule.newmodel.RuleGroup">
+  <attribute name="name">
+    <value>Gen_forecast</value>
+  </attribute>
+  <attribute name="description">
+    <value>a rule group</value>
+  </attribute>
+  <attribute name="role">
+    <value>user</value>
+  </attribute>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkLineStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkLineStr,CHMETHOD:AutoESMethodMthdTWkLineStr.level([prod].[line]),chalpha:chalfaWkLineStr,chtrend:chtrendWkLineStr,chlevel:chlevelWkLineStr,chgamma:chgammaWkLineStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[line]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[line]+[loc].[str]),MASK:MaskWkLineStr,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkItmStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkItmStr,CHMETHOD:AutoESMethodMthdTWkItmStr,chalpha:chalfaWkItmStr,chtrend:chtrendWkItmStr,chlevel:chlevelWkItmStr,chgamma:chgammaWkItmStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[itm]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[itm]+[loc].[str]),MASK:MaskWkItmStr,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkUser1Str</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkUser1Str,CHMETHOD:AutoESMethodMthdTWkUser1Str.level([prod].[usr1]),chalpha:chalfaWkUser1Str,chtrend:chtrendWkUser1Str,chlevel:chlevelWkUser1Str,chgamma:chgammaWkUser1Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr1]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr1]+[loc].[str]),MASK:MaskWkUser1Str,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkUser1Str_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkUser2Str,CHMETHOD:AutoESMethodMthdTWkUser2Str.level([prod].[usr2]),chalpha:chalfaWkUser2Str,chtrend:chtrendWkUser2Str,chlevel:chlevelWkUser2Str,chgamma:chgammaWkUser2Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr2]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr2]+[loc].[str]),MASK:MaskWkUser2Str,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkUser1Str_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkUser3Str,CHMETHOD:AutoESMethodMthdTWkUser3Str.level([prod].[usr3]),chalpha:chalfaWkUser3Str,chtrend:chtrendWkUser3Str,chlevel:chlevelWkUser3Str,chgamma:chgammaWkUser3Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr3]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr3]+[loc].[str]),MASK:MaskWkUser3Str,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkUser1Str_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkUser4Str,CHMETHOD:AutoESMethodMthdTWkUser4Str.level([prod].[usr4]),chalpha:chalfaWkUser4Str,chtrend:chtrendWkUser4Str,chlevel:chlevelWkUser4Str,chgamma:chgammaWkUser4Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr4]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr4]+[loc].[str]),MASK:MaskWkUser4Str,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkCatStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkCatStr,CHMETHOD:AutoESMethodMthdTWkCatStr.level([prod].[cat]),chalpha:chalfaWkCatStr,chtrend:chtrendWkCatStr,chlevel:chlevelWkCatStr,chgamma:chgammaWkCatStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[cat]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[cat]+[loc].[str]),MASK:MaskWkCatStr,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstWkPrmsStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstWkPrmsStr,CHMETHOD:AutoESMethodMthdTWkPrmsStr.level([prod].[prms]),chalpha:chalfaWkPrmsStr,chtrend:chtrendWkPrmsStr,chlevel:chlevelWkPrmsStr,chgamma:chgammaWkPrmsStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[prms]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[prms]+[loc].[str]),MASK:MaskWkPrmsStr,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_FcstLL</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:FcstLL,chalpha:chalfaLL,chtrend:chtrendLL,chlevel:chlevelLL,chgamma:chgammaLL&lt;-Forecast(HISTORY:SlsWb.level([clnd].[week]+[prod].[itm]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[itm]+[loc].[str]+[mth].top),MASK:MaskLL,STARTDATEMEAS:STARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstLL</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstLL&lt;-Forecast(HISTORY:SlsWb.level([clnd].[week]+[prod].[itm]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[itm]+[loc].[str]+[mth].top),MASK:MaskLL,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkItmStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkItmStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[itm]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[itm]+[loc].[str]),MASK:MaskWkItmStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkLineStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkLineStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[line]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[line]+[loc].[str]),MASK:MaskWkLineStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser1Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr1]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr1]+[loc].[str]),MASK:MaskWkUser1Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_1</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser2Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr2]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr2]+[loc].[str]),MASK:MaskWkUser2Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_2</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser3Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr3]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr3]+[loc].[str]),MASK:MaskWkUser3Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>RFcstWkUser1Str_calc_3</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkUser4Str&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[usr4]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[usr4]+[loc].[str]),MASK:MaskWkUser4Str,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkCatStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkCatStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[cat]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[cat]+[loc].[str]),MASK:MaskWkCatStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="com.retek.ride.rule.newmodel.Rule">
+    <attribute name="name">
+      <value>calc_RFcstWkPrmsStr</value>
+    </attribute>
+    <attribute name="description">
+      <value>a rule</value>
+    </attribute>
+    <attribute name="creator">
+      <value>user</value>
+    </attribute>
+    <data_model type="java.lang.String">
+      <attribute name="name">
+        <value>E0</value>
+      </attribute>
+      <attribute name="formula">
+        <value>FORECAST:RFcstWkPrmsStr&lt;-Forecast(HISTORY:SlsMthd.level([clnd].[week]+[prod].[prms]+[loc].[str]),movingaveragewindowlength:MAWinLenLL.level([prod].[prms]+[loc].[str]),MASK:MaskWkPrmsStr,STARTDATEMEAS:RSTARTDATEMEAS,FORECASTLENGTH:52,PERIOD:52,MAXALPHA:1,MINWINTERS:1,MAXB:50,MINB:0.1,MAXWINTERSALPHA:1,MINHOLT:1,MINCROSTON:1,TRENDDAMP:0.5,MAXWINTERSGAMMA:1,seasonalindexsmooth:0.8,smoothbaseline:true,MAXHOLTGAMMA:1,MAXPROFILEALPHA:1)</value>
+      </attribute>
+    </data_model>
+  </data_model>
+</data_set>

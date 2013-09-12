@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="java.lang.Object">
+  <attribute name="name">
+    <value>Taskflow</value>
+  </attribute>
+  <data_model type="java.lang.Object">
+    <attribute name="name">
+      <value>Activity1</value>
+    </attribute>
+    <attribute name="Label">
+      <value>ABC</value>
+    </attribute>
+    <attribute name="Description">
+      <value>ABC</value>
+    </attribute>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task1</value>
+      </attribute>
+      <attribute name="Label">
+        <value>ABC &amp; XYZ</value>
+      </attribute>
+      <attribute name="Description">
+        <value>ABC &amp; XYZ</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="WorkbookTemplate">
+        <value>Workbook3</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step1</value>
+        </attribute>
+        <attribute name="Label">
+          <value>ABC</value>
+        </attribute>
+        <attribute name="Description">
+          <value>ABC</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>ABC</value>
+        </attribute>
+        <attribute name="Worksheets">
+          <value>Worksheet5</value>
+          <value>Worksheet17</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step2</value>
+        </attribute>
+        <attribute name="Label">
+          <value>XYZ</value>
+        </attribute>
+        <attribute name="Description">
+          <value>XYZ</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>XYZ</value>
+        </attribute>
+        <attribute name="Worksheets">
+          <value>Worksheet21</value>
+          <value>Worksheet22</value>
+          <value>Worksheet29</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="java.lang.Object">
+    <attribute name="name">
+      <value>Activity2</value>
+    </attribute>
+    <attribute name="Label">
+      <value>EmptyGroupLabel</value>
+    </attribute>
+    <attribute name="Description">
+      <value>EmptyGroupLabel</value>
+    </attribute>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task2</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Profile Administration</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Profile Administration</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step3</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Profile Administration</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Profile Administration</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Profile Administration</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task3</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Profile Approval</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Profile Approval</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step4</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Final</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Final</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Final</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step5</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Source</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Source</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Source</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step6</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Approval</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Approval</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Approval</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task4</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Profile Maintenance</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Profile Maintenance</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step7</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Final</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Final</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Final</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task5</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Run Batch Profile</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Run Batch Profile</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task6</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Расчет остатков</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Расчет остатков</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="WorkbookTemplate">
+        <value>Workbook1</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step8</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Расчет остатков</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Расчет остатков</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Расчет остатков</value>
+        </attribute>
+        <attribute name="Worksheets">
+          <value>Worksheet1</value>
+          <value>Worksheet3</value>
+        </attribute>
+        <attribute name="MenuItems">
+          <value>menuItem143</value>
+          <value>menuItem144</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task7</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Forecast Administration</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Forecast Administration</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step9</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Basic Settings</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Basic Settings</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Basic Settings</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step10</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Advanced Settings</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Advanced Settings</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Advanced Settings</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task8</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Forecast Approval</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Forecast Approval</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step11</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Approval</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Approval</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Approval</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task9</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Forecast Delete</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Forecast Delete</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task10</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Forecast Scorecard</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Forecast Scorecard</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step12</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Scorecard</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Scorecard</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Scorecard</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task11</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Interactive Forecasting</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Interactive Forecasting</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step13</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Interactive</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Interactive</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Interactive</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task12</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Forecast Like-Item, Sister-Store</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Forecast Like-Item, Sister-Store</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step14</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Like-Item, Sister-Store</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Like-Item, Sister-Store</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Like-Item, Sister-Store</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task13</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Forecast Maintenance</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Forecast Maintenance</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step15</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Basic Settings</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Basic Settings</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Basic Settings</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step16</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Advanced Settings</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Advanced Settings</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Advanced Settings</value>
+        </attribute>
+      </data_model>
+    </data_model>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task14</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Run Batch Forecast</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Run Batch Forecast</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="java.lang.Object">
+    <attribute name="name">
+      <value>Activity3</value>
+    </attribute>
+    <attribute name="Label">
+      <value>Кластеризация товаров</value>
+    </attribute>
+    <attribute name="Description">
+      <value>Кластеризация товаров</value>
+    </attribute>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task15</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Кластеризация по сезонному профилю</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Кластеризация по сезонному профилю</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="WorkbookTemplate">
+        <value>Workbook6</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step17</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Исходные данные</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Исходные данные</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Исходные данные</value>
+        </attribute>
+        <attribute name="Worksheets">
+          <value>Worksheet35</value>
+          <value>Worksheet12</value>
+        </attribute>
+        <attribute name="MenuItems">
+          <value>MenuItem6</value>
+          <value>MenuItem7</value>
+          <value>MenuItem8</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step18</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Настройка кластеризации</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Настройка кластеризации</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Настройка кластеризации</value>
+        </attribute>
+        <attribute name="Worksheets">
+          <value>Worksheet36</value>
+        </attribute>
+        <attribute name="MenuItems">
+          <value>MenuItem6</value>
+          <value>MenuItem7</value>
+          <value>MenuItem8</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step19</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Анализ кластеров</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Анализ кластеров</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Анализ кластеров</value>
+        </attribute>
+        <attribute name="Worksheets">
+          <value>Worksheet37</value>
+          <value>Worksheet38</value>
+          <value>Worksheet39</value>
+          <value>Worksheet40</value>
+        </attribute>
+        <attribute name="MenuItems">
+          <value>MenuItem6</value>
+          <value>MenuItem7</value>
+          <value>MenuItem8</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="java.lang.Object">
+    <attribute name="name">
+      <value>Activity4</value>
+    </attribute>
+    <attribute name="Label">
+      <value>Очистка данных</value>
+    </attribute>
+    <attribute name="Description">
+      <value>Очистка данных</value>
+    </attribute>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task16</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Очистка данных</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Очистка данных</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="WorkbookTemplate">
+        <value>Workbook0</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step20</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Очистка данных</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Очистка данных</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Очистка данных</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step21</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Работа с исключениями</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Работа с исключениями</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Работа с исключениями</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="java.lang.Object">
+    <attribute name="name">
+      <value>Activity5</value>
+    </attribute>
+    <attribute name="Label">
+      <value>Forecast</value>
+    </attribute>
+    <attribute name="Description">
+      <value>Forecast</value>
+    </attribute>
+    <data_model type="java.lang.Object">
+      <attribute name="name">
+        <value>Task17</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Forecast</value>
+      </attribute>
+      <attribute name="Description">
+        <value>Forecast</value>
+      </attribute>
+      <attribute name="HyperDynamic">
+        <value>false</value>
+      </attribute>
+      <attribute name="HideRestricted">
+        <value>false</value>
+      </attribute>
+      <attribute name="DynamicTask">
+        <value>false</value>
+      </attribute>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step22</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Входные данные</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Входные данные</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Входные данные</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step23</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Параметры</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Параметры</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Параметры</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step24</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Прогноз</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Прогноз</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Прогноз</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step25</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Выбранный прогноз</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Выбранный прогноз</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Выбранный прогноз</value>
+        </attribute>
+      </data_model>
+      <data_model type="java.lang.Object">
+        <attribute name="name">
+          <value>Step26</value>
+        </attribute>
+        <attribute name="Label">
+          <value>Прогноз по новым SKU и Магазинам</value>
+        </attribute>
+        <attribute name="Description">
+          <value>Прогноз по новым SKU и Магазинам</value>
+        </attribute>
+        <attribute name="Instructions">
+          <value>Прогноз по новым SKU и Магазинам</value>
+        </attribute>
+      </data_model>
+    </data_model>
+  </data_model>
+</data_set>

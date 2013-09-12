@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data_set type="Workbook">
+  <attribute name="name">
+    <value>Workbook2</value>
+  </attribute>
+  <attribute name="Label">
+    <value>1. Расчет сезонных коэффициентов и очистка от промо</value>
+  </attribute>
+  <attribute name="WorkbookGroup">
+    <value>Custom</value>
+  </attribute>
+  <attribute name="WorkbookGroupLabel">
+    <value>Очистка данных</value>
+  </attribute>
+  <attribute name="WorkbookLib">
+    <value>Templates</value>
+  </attribute>
+  <attribute name="WorkbookType">
+    <value>DynamicTemplate</value>
+  </attribute>
+  <attribute name="IsWizardOnly">
+    <value>false</value>
+  </attribute>
+  <attribute name="IsImageEnabled">
+    <value>false</value>
+  </attribute>
+  <attribute name="RuleSet">
+    <value>SeasKoef</value>
+  </attribute>
+  <attribute name="LoadRules">
+    <value>SeasKoef_load</value>
+  </attribute>
+  <attribute name="CommitRules">
+    <value>SeasKoef_commit</value>
+  </attribute>
+  <attribute name="CalcRules">
+    <value>SeasKoef_calc</value>
+  </attribute>
+  <attribute name="RefreshRules">
+    <value>SeasKoef_refresh</value>
+  </attribute>
+  <attribute name="IsUseDefaults">
+    <value>true</value>
+  </attribute>
+  <attribute name="DpmDimensions">
+    <value></value>
+  </attribute>
+  <attribute name="IsCustomWizard">
+    <value>false</value>
+  </attribute>
+  <data_model type="AxisInfo">
+    <attribute name="name">
+      <value>AxisInfo</value>
+    </attribute>
+    <attribute name="MEASAxis">
+      <value>XAxis</value>
+    </attribute>
+    <attribute name="MEASOrder">
+      <value>0</value>
+    </attribute>
+  </data_model>
+  <data_model type="Wizards">
+    <attribute name="name">
+      <value>Wizards</value>
+    </attribute>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>LOCWizard</value>
+      </attribute>
+      <attribute name="LOCOrder">
+        <value>0</value>
+      </attribute>
+      <attribute name="LOCDim">
+        <value>str</value>
+      </attribute>
+      <attribute name="LOCLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="LOCRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="LOCMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="LOCWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>CLNDWizard</value>
+      </attribute>
+      <attribute name="CLNDOrder">
+        <value>1</value>
+      </attribute>
+      <attribute name="CLNDDim">
+        <value>week</value>
+      </attribute>
+      <attribute name="CLNDLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="CLNDRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="CLNDMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="CLNDWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+    <data_model type="Wizard">
+      <attribute name="name">
+        <value>PRODWizard</value>
+      </attribute>
+      <attribute name="PRODOrder">
+        <value>2</value>
+      </attribute>
+      <attribute name="PRODDim">
+        <value>itm</value>
+      </attribute>
+      <attribute name="PRODLLabel">
+        <value></value>
+      </attribute>
+      <attribute name="PRODRLabel">
+        <value></value>
+      </attribute>
+      <attribute name="PRODMaxPos">
+        <value>-1</value>
+      </attribute>
+      <attribute name="PRODWizardLabel">
+        <value></value>
+      </attribute>
+    </data_model>
+  </data_model>
+  <data_model type="WorkbookTabs">
+    <attribute name="name">
+      <value>WorkbookTabs</value>
+    </attribute>
+    <data_model type="WorkbookTab">
+      <attribute name="name">
+        <value>PromoCalcT</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Очистка от промо эффекта</value>
+      </attribute>
+      <data_model type="Worksheets">
+        <attribute name="name">
+          <value>Worksheets</value>
+        </attribute>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>SlsWithoutPromS</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Продажи, очищенные от промо</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>day_itm_str</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>sal</value>
+                <value>SlsWithoutPromo</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>sal</value>
+                <value>SlsWithoutPromo</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>sal</value>
+                <value>SlsWithoutPromo</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>sal</value>
+                <value>SlsWithoutPromo</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>PromoKoefS</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Коэффициенты промо</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>day_itm_str_PRMO</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>Promokoeff</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>Promokoeff</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>Promokoeff</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>Promokoeff</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRMHAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="PRMHOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>1</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>2</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+      </data_model>
+    </data_model>
+    <data_model type="WorkbookTab">
+      <attribute name="name">
+        <value>SeasCalcT</value>
+      </attribute>
+      <attribute name="Label">
+        <value>Расчет сезонных коэффициентов</value>
+      </attribute>
+      <data_model type="Worksheets">
+        <attribute name="name">
+          <value>Worksheets</value>
+        </attribute>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>Worksheet11</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Параметры циклов</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ThrCycleCount</value>
+                <value>InitialDateClSeasD</value>
+                <value>LevelClearSeas</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ThrCycleCount</value>
+                <value>InitialDateClSeasD</value>
+                <value>LevelClearSeas</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ThrCycleCount</value>
+                <value>InitialDateClSeasD</value>
+                <value>LevelClearSeas</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ThrCycleCount</value>
+                <value>InitialDateClSeasD</value>
+                <value>LevelClearSeas</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>Worksheet7</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Параметры выбора товаров и магазинов</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>day_filt</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>LastDateClSeasI</value>
+                <value>ThrNotSlsDay</value>
+                <value>LastDateClSeasD</value>
+                <value>ThrDeficitClSeas</value>
+                <value>FirstDateClSeasD</value>
+                <value>FirstDateClSeasI</value>
+                <value>LeftCycleBoardBFl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>LastDateClSeasI</value>
+                <value>ThrNotSlsDay</value>
+                <value>LastDateClSeasD</value>
+                <value>ThrDeficitClSeas</value>
+                <value>FirstDateClSeasD</value>
+                <value>FirstDateClSeasI</value>
+                <value>LeftCycleBoardBFl</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ThrNotSlsDay</value>
+                <value>ThrDeficitClSeas</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ThrNotSlsDay</value>
+                <value>ThrDeficitClSeas</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="FLAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="FLOrder">
+              <value>0</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+            <data_model type="PositionQuery">
+              <attribute name="name">
+                <value>PositionQuery17</value>
+              </attribute>
+              <attribute name="Label">
+                <value>PositionQuery17</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>LeftCycleBoardBFl</value>
+              </attribute>
+              <attribute name="DimensionName">
+                <value>day</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>Worksheet8</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Сезонные коэффициенты</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>woy_itm</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>KoefSeas</value>
+                <value>KoefSeasWk</value>
+                <value>SlsChClSeasPrms</value>
+                <value>SlsChClSeasBran</value>
+                <value>SlsChClSeasCat</value>
+                <value>SlsChClSeasPrdt</value>
+                <value>SlsChClSeasAvgBran</value>
+                <value>SlsChClSeasSgmt</value>
+                <value>SlsChClSeasTgms</value>
+                <value>SlsChClSeasAvgCat</value>
+                <value>SlsChClSeasTgrp</value>
+                <value>SlsChClSeasAvgTgrp</value>
+                <value>SlsChClSeasAvgPrdt</value>
+                <value>SlsChClSeasAvgPrms</value>
+                <value>SlsChClSeasAvgSgmt</value>
+                <value>SlsChClSeasAvgTgms</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>KoefSeas</value>
+                <value>KoefSeasWk</value>
+                <value>SlsChClSeasPrms</value>
+                <value>SlsChClSeasBran</value>
+                <value>SlsChClSeasCat</value>
+                <value>SlsChClSeasPrdt</value>
+                <value>SlsChClSeasAvgBran</value>
+                <value>SlsChClSeasSgmt</value>
+                <value>SlsChClSeasTgms</value>
+                <value>SlsChClSeasAvgCat</value>
+                <value>SlsChClSeasTgrp</value>
+                <value>SlsChClSeasAvgTgrp</value>
+                <value>SlsChClSeasAvgPrdt</value>
+                <value>SlsChClSeasAvgPrms</value>
+                <value>SlsChClSeasAvgSgmt</value>
+                <value>SlsChClSeasAvgTgms</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>KoefSeas</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>KoefSeas</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>Worksheet14</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Дни без продаж</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>day_str_filt</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>CountNotSlsDaysCycleFl</value>
+                <value>RatioNotSlsDaysCycleFl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>CountNotSlsDaysCycleFl</value>
+                <value>RatioNotSlsDaysCycleFl</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>CountNotSlsDaysCycleFl</value>
+                <value>RatioNotSlsDaysCycleFl</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>CountNotSlsDaysCycleFl</value>
+                <value>RatioNotSlsDaysCycleFl</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="FLAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="FLOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+            <data_model type="PositionQuery">
+              <attribute name="name">
+                <value>PositionQuery19</value>
+              </attribute>
+              <attribute name="Label">
+                <value>PositionQuery19</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>LeftCycleBoardBFl</value>
+              </attribute>
+              <attribute name="DimensionName">
+                <value>day</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+        <data_model type="Worksheet">
+          <attribute name="name">
+            <value>Worksheet10</value>
+          </attribute>
+          <attribute name="Label">
+            <value>Магазины и товары для расчета сезонных коэффициентов</value>
+          </attribute>
+          <attribute name="WorksheetIntersection">
+            <value>day_itm_str_filt</value>
+          </attribute>
+          <attribute name="IsUseDefaultAxis">
+            <value>false</value>
+          </attribute>
+          <data_model type="Profiles">
+            <attribute name="name">
+              <value>Profiles</value>
+            </attribute>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Viewable</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ItmClSls</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ItmClSls</value>
+              </attribute>
+            </data_model>
+            <data_model type="Profile">
+              <attribute name="name">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Label">
+                <value>Default</value>
+              </attribute>
+              <attribute name="Measures">
+                <value>ItmClSls</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>ItmClSls</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="AxisInfo">
+            <attribute name="name">
+              <value>AxisInfo</value>
+            </attribute>
+            <attribute name="CLNDAxis">
+              <value>XAxis</value>
+            </attribute>
+            <attribute name="CLNDOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="PRODAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="PRODOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="LOCAxis">
+              <value>YAxis</value>
+            </attribute>
+            <attribute name="LOCOrder">
+              <value>1</value>
+            </attribute>
+            <attribute name="MEASAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="MEASOrder">
+              <value>0</value>
+            </attribute>
+            <attribute name="FLAxis">
+              <value>ZAxis</value>
+            </attribute>
+            <attribute name="FLOrder">
+              <value>1</value>
+            </attribute>
+          </data_model>
+          <data_model type="PositionQueries">
+            <attribute name="name">
+              <value>PositionQueries</value>
+            </attribute>
+            <data_model type="PositionQuery">
+              <attribute name="name">
+                <value>PositionQuery18</value>
+              </attribute>
+              <attribute name="Label">
+                <value>PositionQuery18</value>
+              </attribute>
+              <attribute name="MeasureName">
+                <value>LeftCycleBoardBFl</value>
+              </attribute>
+              <attribute name="DimensionName">
+                <value>day</value>
+              </attribute>
+            </data_model>
+          </data_model>
+          <data_model type="StyleORs">
+            <attribute name="name">
+              <value>StyleORs</value>
+            </attribute>
+          </data_model>
+        </data_model>
+      </data_model>
+    </data_model>
+  </data_model>
+  <data_model type="DynHiers">
+    <attribute name="name">
+      <value>DynHiers</value>
+    </attribute>
+  </data_model>
+  <data_model type="EditedMeasures">
+    <attribute name="name">
+      <value>EditedMeasures</value>
+    </attribute>
+  </data_model>
+  <data_model type="PercentToParents">
+    <attribute name="name">
+      <value>PercentToParents</value>
+    </attribute>
+  </data_model>
+</data_set>
